@@ -4,7 +4,7 @@ export default () => (
   <div>
     <Nav />
     <div className='hero'>
-      <h1 className='title'>Next.js + Tailwind css</h1>
+      <h1 className='title'>An Open Source Camera to Collect Your Spatial Data</h1>
     </div>
   </div>
 )
