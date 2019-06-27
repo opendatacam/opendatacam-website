@@ -2,8 +2,8 @@
 const purgecss = require('@fullhuman/postcss-purgecss')({
 
   // Specify the paths to all of the template files in your project 
-  // For now do not do anything
-  content: ['./components/*.js','./pages/*.js'],
+  // Need to put all component with css classes in components/pages folder
+  content: ['./components/**/*.js','./pages/**/*.js'],
   whitelist: ['html', 'body'],
 
   // Include any special characters you're using in this regular expression
