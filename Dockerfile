@@ -24,6 +24,7 @@ WORKDIR /usr/src/app
 
 COPY --from=builder /usr/src/app/.next /usr/src/app/.next
 COPY --from=builder /usr/src/app/node_modules /usr/src/app/node_modules
+COPY --from=builder /usr/src/app/next.config.js /usr/src/app/
 COPY --from=builder /usr/src/app/package.json /usr/src/app/
 
 EXPOSE 3000
