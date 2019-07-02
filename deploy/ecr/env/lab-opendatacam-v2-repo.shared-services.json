@@ -1,0 +1,14 @@
+[
+    {
+        "ParameterKey": "CostCenterTag",
+        "ParameterValue": "7000"
+    },
+    {
+        "ParameterKey": "ServiceName",
+        "ParameterValue": "lab-opendatacam-v2-repo"
+    },
+    {
+        "ParameterKey": "SquadTag",
+        "ParameterValue": "Lab"
+    }
+]
