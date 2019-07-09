@@ -5,8 +5,8 @@ import getConfig from 'next/config'
 function Layout({children}) { 
     const { publicRuntimeConfig } = getConfig()
     const { ROOT_URL } = publicRuntimeConfig
-    const title = `Flights to Rome - moovel lab`
-    const description = `"Flights to Rome" is a data visualization project that explores the idiom, "all roads lead to Rome". The outcome is both information visualization and data art and unveils mobility infrastructures on land and in the air.`
+    const title = `Opendatacam`
+    const description = `An Open Source Camera to Collect Your Spatial Data`
     const url = `https://${ROOT_URL}`
     const urlSiteImage = `static/seo/seo.jpg`
 
@@ -23,15 +23,12 @@ function Layout({children}) {
                     name='description'
                     content={description}
                 />
-                <link
-                    rel='apple-touch-icon'
-                    href='static/favicon/apple-touch-icon.png'
-                />
-                <link
-                    rel='icon'
-                    type='image/png'
-                    href='static/favicon/favicon.png'
-                />
+                <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png" />
+                <link rel="manifest" href="/site.webmanifest" />
+                <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+                <meta name="theme-color" content="#ffffff" />
                 <meta
                     property='og:title'
                     content={title}
