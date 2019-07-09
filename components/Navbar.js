@@ -14,20 +14,22 @@ export default function Nav() {
             <img className="w-8" src="/static/odc-logo.svg" />
           </a>
         </li>
-        <li className="flex items-center">
-          <li className="mr-6">
-            <a href="https://twitter.com/moovellab">
-              <img src="/static/icons/twitter.svg" />
-            </a>
-          </li>
-          <li className="mr-6">
-            <a href="https://github.com/opendatacam/opendatacam">
-              <img src="/static/icons/github.svg" />
-            </a>
-          </li>
-          <li>
-            <a className="text-black hover:text-gray-700" href="#">Contact</a>
-          </li>
+        <li>
+          <ul className="flex items-center">
+            <li className="mr-6">
+              <a href="https://twitter.com/moovellab">
+                <img src="/static/icons/twitter.svg" />
+              </a>
+            </li>
+            <li className="mr-6">
+              <a href="https://github.com/opendatacam/opendatacam">
+                <img src="/static/icons/github.svg" />
+              </a>
+            </li>
+            <li>
+              <a className="text-black hover:text-gray-500 text-lg font-medium" href="#">Contact</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
