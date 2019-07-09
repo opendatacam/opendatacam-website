@@ -1,5 +1,12 @@
 @import './button.css';
 
 @tailwind base;
+
+html {
+    @apply font-sans;
+  }
+
 @tailwind components;
 @tailwind utilities;
+
+

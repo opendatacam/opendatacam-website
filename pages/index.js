@@ -1,4 +1,4 @@
-import Nav from '../components/nav'
+import Nav from '../components/Navbar'
 import '../styles/index.css'
 import Layout from '../components/Layout';
 
