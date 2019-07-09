@@ -14,8 +14,9 @@ export default () => (
         font-medium
         text-center
         max-w-lg
-        pl-8
-        pr-8'>
+        pl-4
+        pr-4
+        m-10'>
         An Open Source Camera to Collect Your Spatial Data
       </h1>
     </div>
