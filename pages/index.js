@@ -154,10 +154,10 @@ export default () => (
         <div className="flex flex-wrap -mx-2">
           <div className="w-full md:w-1/3 px-8">
             <a href="https://beatthetraffic.moovellab.com">
-              <div className="card">
+              <div className="card md:mt-0">
                 <div className="card-bordertop" />
-                <div className="card-title">Research Project with HTW & Technologiestiftung</div>
-                <div className="card-text mt-4">In coordination with the Berlin traffic administration and advising planners, we’d like to explore how the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test scenarios and data evaluation.</div>
+                <div className="card-title card-title--min-height-54px">Research Project with HTW & Technologiestiftung</div>
+                <div className="card-text mt-4 card-text--min-height-200px">In coordination with the Berlin traffic administration and advising planners, we’d like to explore how the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test scenarios and data evaluation.</div>
                 <img className="mt-8" src="static/icons/arrow-right-blue.svg" />
                 <img className="w-full mt-4" src="static/images/street-jetsonnano.jpg" />
               </div>
@@ -165,10 +165,10 @@ export default () => (
           </div>
           <div className="w-full md:w-1/3 px-8">
             <a href="https://beatthetraffic.moovellab.com">
-              <div className="card">
+              <div className="card md:mt-0">
                 <div className="card-bordertop" />
-                <div className="card-title">Logistics NRW Dashboard</div>
-                <div className="card-text mt-4">The “Crowd Solving” project has implemented a Logistics Dashboard including various webcam locations where OpenDataCam is supposed to be implemented to create traffic data around the Neuss Harbour area. </div>
+                <div className="card-title card-title--min-height-54px">Logistics NRW Dashboard</div>
+                <div className="card-text mt-4 card-text--min-height-200px">The “Crowd Solving” project has implemented a Logistics Dashboard including various webcam locations where OpenDataCam is supposed to be implemented to create traffic data around the Neuss Harbour area. </div>
                 <img className="mt-8" src="static/icons/arrow-right-green.svg" />
                 <img className="w-full mt-4" src="static/images/street-jetsonnano.jpg" />
               </div>
@@ -176,10 +176,10 @@ export default () => (
           </div>
           <div className="w-full md:w-1/3 px-8">
             <a href="https://beatthetraffic.moovellab.com">
-              <div className="card">
+              <div className="card md:mt-0">
                 <div className="card-bordertop" />
-                <div className="card-title">Beat the traffic</div>
-                <div className="card-text mt-4">In coordination with the Berlin traffic administration and advising planners, we’d like to explore how the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test scenarios and data evaluation.</div>
+                <div className="card-title card-title--min-height-54px">Beat the traffic</div>
+                <div className="card-text mt-4 card-text--min-height-200px">In coordination with the Berlin traffic administration and advising planners, we’d like to explore how the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test scenarios and data evaluation.</div>
                 <img className="mt-8" src="static/icons/arrow-right-yellow.svg" />
                 <img className="w-full mt-4" src="static/images/street-jetsonnano.jpg" />
               </div>
@@ -187,6 +187,86 @@ export default () => (
           </div>
         </div>
       </div>
+    </div>
+    <div className="container mx-auto" id="features">
+      <h2 className="section-title">Shopping List</h2>
+      <div className="section-content">
+        <div className="section-content-box">
+          <div className="section-content-text">
+            We’ve designed and tested OpenDataCam on a few different hardware setups. These are the ones we we suggest you to use. Please share us your setups and best practices.
+          </div>
+        </div>
+        <div className="section-content-box">
+          <div className="section-content-text">
+            Please note, we are not (re)selling or affiliated with the hardware. Check your local IoT retailer for best availability. 
+          </div>
+        </div>
+      </div>
+      <div className="px-2">
+        <div className="flex flex-wrap -mx-2">
+        <div className="w-full md:w-1/2 lg:w-1/4 px-6">
+            <a href="https://github.com/opendatacam/opendatacam/blob/master/documentation/jetson/JETSON_NANO.md">
+              <div className="card lg:mt-0">
+                <div className="card-bordertop" />
+                <div className="card-title">OpenDataCam + Nano</div>
+                <div className="card-text mt-4">small and cheap, limited accuracy at 12 fps, very low power mode (5 W)</div>
+                <div className="text-green-500 font-medium mt-6">$99.00 USD</div>
+              </div>
+            </a>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/4 px-6">
+            <a href="https://github.com/opendatacam/opendatacam">
+              <div className="card lg:mt-0">
+                <div className="card-bordertop" />
+                <div className="card-title">OpenDatacam + TX2</div>
+                <div className="card-text mt-4">large setup medium price, “mid accuracy at X fps, medium power consumption (10 W)</div>
+                <div className="text-blue-400 font-medium mt-6">$399.00 USD</div>
+              </div>
+            </a>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/4 px-6">
+            <a href="https://github.com/opendatacam/opendatacam">
+              <div className="card lg:mt-0">
+                <div className="card-bordertop" />
+                <div className="card-title">OpenDataCam + Xavier</div>
+                <div className="card-text mt-4">large setup at highest price, full accuracy (25 fps), low power consumption (15W)</div>
+                <div className="text-yellow-400 font-medium mt-6">$699.00 USD</div>
+              </div>
+            </a>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/4 px-6">
+            <a href="https://github.com/opendatacam/opendatacam">
+              <div className="card lg:mt-0">
+                <div className="card-bordertop" />
+                <div className="card-title">On the cloud / local machine</div>
+                <div className="card-text mt-4">On demand accuracy depending on server / local machine capacity + IP accessible cam or run on pre-recorded footage</div>
+                <div className="text-red-500 font-medium mt-6">$0.5 - $1 USD / hour</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="mt-32 mb-48 flex justify-center items-center flex-col">
+      <div className={`
+        text-center
+        max-w-lg
+        pl-8
+        pr-8
+        text-xl  
+        md:text-2xl 
+        font-medium
+        relative
+        z-10`}
+      >
+        As you know, OpenDataCam is open source and non for profit. Please use this Repo to report bugs, request features, push your fixes and get in touch with the community. 
+      </div>
+      <a
+        href="https://github.com/opendatacam/opendatacam"
+        className="btn btn-black inline-flex flex items-center justify-center mt-8"
+      >
+        Github repository
+      </a>
     </div>
     <style jsx>{`
       .landing-container {

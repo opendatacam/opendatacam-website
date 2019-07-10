@@ -74,12 +74,6 @@ html {
   @apply mt-12;
 }
 
-@screen md {
-  .card {
-    @apply mt-0;
-  }
-}
-
 .card-bordertop {
   @apply border-2 border-black w-full mb-4;
 }
@@ -93,12 +87,16 @@ html {
 }
 
 @screen md {
-  .card-title {
+  .card-title--min-height-54px {
     min-height: 54px;
   }
 
-  .card-text {
+  .card-text--min-height-200px {
     min-height: 200px;
+  }
+
+  .card-text--min-height-150px {
+    min-height: 150px;
   }
 }
 
