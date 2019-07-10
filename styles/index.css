@@ -68,5 +68,24 @@ html {
 
 /* End Section CSS */
 
+/* Card CSS */
+
+.card-bordertop {
+  @apply border-2 border-black w-full mb-4;
+}
+
+.card-title {
+  @apply text-gray-600 text-lg font-medium;
+  min-height: 54px;
+}
+
+.card-text {
+  @apply text-justify text-lg mt-4;
+  min-height: 200px;
+}
+
+.card:hover .card-bordertop {
+  @apply border-gray-500;
+}
 
 
