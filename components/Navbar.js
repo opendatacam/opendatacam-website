@@ -8,7 +8,7 @@ const links = [
 export default function Nav() {
   return (
     <nav>
-      <ul className="flex items-center justify-between p-8">
+      <ul className="flex items-center justify-between p-8 lg:pr-16 lg:pl-16 relative z-10">
         <li>
           <a href="/">
             <img className="w-8" src="/static/odc-logo.svg" />
@@ -18,12 +18,12 @@ export default function Nav() {
           <ul className="flex items-center">
             <li className="mr-6">
               <a href="https://twitter.com/moovellab">
-                <img src="/static/icons/twitter.svg" />
+                <img width="24" height="24" src="/static/icons/twitter.svg" />
               </a>
             </li>
             <li className="mr-6">
               <a href="https://github.com/opendatacam/opendatacam">
-                <img src="/static/icons/github.svg" />
+                <img width="24" height="24" src="/static/icons/github.svg" />
               </a>
             </li>
             <li>
