@@ -32,10 +32,10 @@ export default () => (
             Installation guide
           </a>
         </div>
-        <img className="blue-sun background-icon" src="static/background-icons/blue-sun.svg" />
-        <img className="red-string background-icon" src="static/background-icons/red-string.svg" />
-        <img className="green-camera background-icon" src="static/background-icons/green-camera.svg" />
-        <img className="road-yellow background-icon" src="static/background-icons/road-yellow.svg" />
+        <img className="blue-sun background-icon w-2/6 sm:w-auto" src="static/background-icons/blue-sun.svg" />
+        <img className="red-string background-icon w-2/6 sm:w-2/6 md:w-auto" src="static/background-icons/red-string.svg" />
+        <img className="green-camera background-icon w-2/6 sm:w-auto" src="static/background-icons/green-camera.svg" />
+        <img className="road-yellow background-icon w-2/6 sm:w-auto" src="static/background-icons/road-yellow.svg" />
       </div>
     </div>
     <div className="video-responsive">
