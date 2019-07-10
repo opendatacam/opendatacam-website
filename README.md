@@ -1,5 +1,7 @@
 # Opendatacam website
 
+Latest version: https://out-sagkjtmrag.now.sh/
+
 **Development mode**
 
 ```bash
