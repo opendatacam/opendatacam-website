@@ -41,7 +41,7 @@ export default () => (
     <div className="video-responsive">
       <iframe src="https://player.vimeo.com/video/260744286" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
     </div>
-    <div className="about-section container mx-auto">
+    <div className="container mx-auto" id="about">
       <h2 className="section-title">About</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
@@ -80,6 +80,14 @@ export default () => (
         </div>
         <div className="section-content-box">
           <img className="section-content-img" src="static/images/about-3.jpg" alt="YOLO neural network" />
+        </div>
+      </div>
+    </div>
+    <div className="container mx-auto" id="appdemo">
+      <h2 className="section-title">App demo</h2>
+      <div className="rounded-lg border border-solid border-gray-400 p-4 sm:p-8 sm:pl-12 sm:pr-12 m-4">
+        <div className="video-responsive">
+          <iframe src="https://player.vimeo.com/video/346340651" width="640" height="332" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
       </div>
     </div>
