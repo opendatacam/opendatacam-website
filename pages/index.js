@@ -39,7 +39,49 @@ export default () => (
       </div>
     </div>
     <div className="video-responsive">
-      <iframe src="https://player.vimeo.com/video/260744286" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/260744286" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+    </div>
+    <div className="about-section container mx-auto">
+      <h2 className="section-title">About</h2>
+      <div className="section-content section-content--reverse">
+        <div className="section-content-box">
+          <div className="section-content-title">
+            Introduction
+          </div>
+          <div className="section-content-text">
+            'Open Data Cam' is a tool that helps to quantify the world. It’s here for everyone to use! With computer vision OpenDataCam understands and quantifies moving objects. The simple setup allows everybody to become an urban data miner.
+          </div>
+        </div>
+        <div className="section-content-box">
+          <img className="section-content-img" src="static/images/about-1.jpg" alt="Camera" />
+        </div>
+      </div>
+      <div className="section-content">
+        <div className="section-content-box">
+          <div className="section-content-title">
+            How can OpenDataCam see?
+          </div>
+          <div className="section-content-text">
+            OpenDataCam consists of a camera attached to a mini computer. It’s running an object detection algorithm that counts and tracks moving objects. The board is equipped with a GPU (graphical processing unit), which allows it to process many parallel image threads at once. The perfect tool for image analysis and video processing.
+          </div>
+        </div>
+        <div className="section-content-box">
+          <img className="section-content-img" src="static/images/about-2.jpg" alt="RJ45 Cables" />
+        </div>
+      </div>
+      <div className="section-content section-content--reverse">
+        <div className="section-content-box">
+          <div className="section-content-title">
+            Yolo
+          </div>
+          <div className="section-content-text">
+            On the software side OpenDataCam is running YOLO — an object detection library. YOLO is trained to detect objects in images. The attached camera feeds YOLO with a video, YOLO then outputs all objects in each frame.
+          </div>
+        </div>
+        <div className="section-content-box">
+          <img className="section-content-img" src="static/images/about-3.jpg" alt="YOLO neural network" />
+        </div>
+      </div>
     </div>
     <style jsx>{`
       .landing-container {
@@ -74,13 +116,13 @@ export default () => (
 
       .green-camera {
         position: absolute;
-        bottom: 3rem;
+        bottom: 10%;
         right: 5%;
       }
 
       .road-yellow {
         position: absolute;
-        bottom: 1rem;
+        bottom: 15%;
         left: 5%;
       }
 
