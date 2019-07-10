@@ -151,8 +151,8 @@ export default () => (
         </div>
       </div>
       <div className="px-2 mt-12">
-        <div className="flex -mx-2">
-          <div className="w-1/3 px-8">
+        <div className="flex flex-wrap -mx-2">
+          <div className="w-full md:w-1/3 px-8">
             <a href="https://beatthetraffic.moovellab.com">
               <div className="card">
                 <div className="card-bordertop" />
@@ -163,7 +163,7 @@ export default () => (
               </div>
             </a>
           </div>
-          <div className="w-1/3 px-8">
+          <div className="w-full md:w-1/3 px-8">
             <a href="https://beatthetraffic.moovellab.com">
               <div className="card">
                 <div className="card-bordertop" />
@@ -174,7 +174,7 @@ export default () => (
               </div>
             </a>
           </div>
-          <div className="w-1/3 px-8">
+          <div className="w-full md:w-1/3 px-8">
             <a href="https://beatthetraffic.moovellab.com">
               <div className="card">
                 <div className="card-bordertop" />
