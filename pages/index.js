@@ -41,7 +41,8 @@ export default () => (
     <div className="video-responsive">
       <iframe src="https://player.vimeo.com/video/260744286" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
     </div>
-    <div className="container mx-auto" id="about">
+    <div className="container mx-auto relative" id="about">
+      <img className="yellow-string background-icon hidden md:block" src="static/background-icons/yellow-string.svg" />
       <h2 className="section-title">About</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
@@ -91,7 +92,8 @@ export default () => (
         </div>
       </div>
     </div>
-    <div className="container mx-auto" id="features">
+    <div className="container mx-auto relative md:mt-32" id="features">
+      <img className="blue-arrows background-icon hidden md:block" src="static/background-icons/blue-arrows.svg" />
       <h2 className="section-title">Features</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
@@ -107,7 +109,8 @@ export default () => (
         </div>
       </div>
     </div>
-    <div className="container mx-auto" id="ethics">
+    <div className="container mx-auto relative md:mt-32" id="ethics">
+      <img className="green-cloud background-icon hidden md:block" src="static/background-icons/green-cloud.svg" />
       <h2 className="section-title">Ethics</h2>
       <div className="section-content">
         <div className="section-content-box">
@@ -136,7 +139,7 @@ export default () => (
         </div>
       </div>
     </div>
-    <div className="container mx-auto" id="features">
+    <div className="container mx-auto md:mt-32" id="testimonials">
       <h2 className="section-title">OpenDataCam in the Wild</h2>
       <div className="section-content">
         <div className="section-content-box">
@@ -188,7 +191,7 @@ export default () => (
         </div>
       </div>
     </div>
-    <div className="container mx-auto" id="features">
+    <div className="container mx-auto md:mt-32" id="shoppinglist">
       <h2 className="section-title">Shopping List</h2>
       <div className="section-content">
         <div className="section-content-box">
@@ -198,13 +201,13 @@ export default () => (
         </div>
         <div className="section-content-box">
           <div className="section-content-text">
-            Please note, we are not (re)selling or affiliated with the hardware. Check your local IoT retailer for best availability. 
+            Please note, we are not (re)selling or affiliated with the hardware. Check your local IoT retailer for best availability.
           </div>
         </div>
       </div>
       <div className="px-2">
         <div className="flex flex-wrap -mx-2">
-        <div className="w-full md:w-1/2 lg:w-1/4 px-6">
+          <div className="w-full md:w-1/2 lg:w-1/4 px-6">
             <a href="https://github.com/opendatacam/opendatacam/blob/master/documentation/jetson/JETSON_NANO.md">
               <div className="card lg:mt-0">
                 <div className="card-bordertop" />
@@ -247,19 +250,22 @@ export default () => (
         </div>
       </div>
     </div>
-    <div className="mt-32 mb-48 flex justify-center items-center flex-col">
+    <div className="container mx-auto mt-32 mb-48 flex justify-center items-center flex-col relative">
+      <img className="red-string-bottom background-icon hidden md:block" src="static/background-icons/red-string.svg" />
       <div className={`
         text-center
-        max-w-lg
+        md:max-w-lg
+        lg:max-w-xl
         pl-8
         pr-8
         text-xl  
         md:text-2xl 
+        lg:text-3xl
         font-medium
         relative
         z-10`}
       >
-        As you know, OpenDataCam is open source and non for profit. Please use this Repo to report bugs, request features, push your fixes and get in touch with the community. 
+        As you know, OpenDataCam is open source and non for profit. Please use this Repo to report bugs, request features, push your fixes and get in touch with the community.
       </div>
       <a
         href="https://github.com/opendatacam/opendatacam"
@@ -267,6 +273,7 @@ export default () => (
       >
         Github repository
       </a>
+      <img className="mr-8" src="static/background-icons/yellow-arrow.svg" />
     </div>
     <style jsx>{`
       .landing-container {
@@ -309,6 +316,30 @@ export default () => (
         position: absolute;
         bottom: 15%;
         left: 5%;
+      }
+
+      .yellow-string {
+        position: absolute;
+        top: 250px;
+        right: 0;
+      }
+
+      .blue-arrows {
+        position: absolute;
+        left: 0;
+        top: -50px;
+      }
+
+      .green-cloud {
+        position: absolute;
+        right: 0px;
+        top: -50px;
+      }
+
+      .red-string-bottom {
+        position: absolute;
+        left: 0px;
+        top: 100px;
       }
 
       .video-responsive{
