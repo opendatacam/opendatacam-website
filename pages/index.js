@@ -19,13 +19,15 @@ export default () => (
             sm:text-3xl 
             md:text-4xl 
             lg:text-5xl 
-            font-medium`
+            font-medium
+            relative
+            z-10`
           }>
             An Open Source Camera to Collect Your Spatial Data
           </h1>
           <a 
             href="https://github.com/opendatacam/opendatacam" 
-            className="btn btn-black inline-flex mt-6 flex items-center justify-center"
+            className="btn btn-black inline-flex mt-10 flex items-center justify-center"
           >
             Installation guide
           </a>
@@ -36,10 +38,13 @@ export default () => (
         <img className="road-yellow background-icon" src="static/background-icons/road-yellow.svg" />
       </div>
     </div>
+    <div className="video-responsive">
+      <iframe src="https://player.vimeo.com/video/260744286" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
     <style jsx>{`
       .landing-container {
         position: relative;
-        min-height: 600px;
+        min-height: 90vh;
         max-height: 900px;
         display: flex;
         flex-direction: column;
@@ -52,7 +57,7 @@ export default () => (
       }
 
       .background-icon {
-        z-index: 0;
+        z-index: -1;
       }
 
       .blue-sun {
@@ -77,6 +82,20 @@ export default () => (
         position: absolute;
         bottom: 1rem;
         left: 5%;
+      }
+
+      .video-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+      }
+      .video-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
       }
     `}</style>
   </Layout>
