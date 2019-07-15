@@ -1,7 +1,7 @@
 # building phase
 FROM node:10 as builder
 
-LABEL description="Landingpage for 'the lab website'"
+LABEL description="Landingpage for 'opendatacam website v2'"
 LABEL project="lab-opendatacam-v2"
 LABEL maintainer="florian.porada@moovel.com"
 
@@ -15,18 +15,12 @@ COPY . /usr/src/app
 RUN npm install --unsafe-perm --only=prod
 
 # Run assets build (CSS,JS)
-RUN npm run build
+RUN npm run export
 
-# Production phase
-FROM node:10
+# production phase
+FROM nginx
 
-WORKDIR /usr/src/app
+EXPOSE 80
 
-COPY --from=builder /usr/src/app/.next /usr/src/app/.next
-COPY --from=builder /usr/src/app/node_modules /usr/src/app/node_modules
-COPY --from=builder /usr/src/app/next.config.js /usr/src/app/
-COPY --from=builder /usr/src/app/package.json /usr/src/app/
-
-EXPOSE 3000
-
-CMD [ "npm", "run", "start" ]
+COPY --from=builder /usr/src/app/nginx.conf /etc/nginx/nginx.conf
+COPY --from=builder /usr/src/app/out /usr/share/nginx/html
