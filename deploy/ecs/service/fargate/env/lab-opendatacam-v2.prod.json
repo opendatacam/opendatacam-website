@@ -1,78 +1,78 @@
 [
-    {
-        "ParameterKey": "ClusterStackName",
-        "ParameterValue": "lab-ecs-cluster"
-    },
-    {
-        "ParameterKey": "ContainerPort",
-        "ParameterValue": "3000"
-    },
-    {
-        "ParameterKey": "CostCenterTag",
-        "ParameterValue": "7000"
-    },
-    {
-        "ParameterKey": "DesiredCount",
-        "ParameterValue": "1"
-    },
-    {
-        "ParameterKey": "DockerImage",
-        "ParameterValue": "nginxdemos/hello"
-    },
-    {
-        "ParameterKey": "Host",
-        "ParameterValue": ""
-    },
-    {
-        "ParameterKey": "ListenerMode",
-        "ParameterValue": "TLS"
-    },
-    {
-        "ParameterKey": "ListenerRuleHostPriority",
-        "ParameterValue": "149"
-    },
-    {
-        "ParameterKey": "ListenerRulePathPriority",
-        "ParameterValue": "150"
-    },
-    {
-        "ParameterKey": "ListenerRulePriority",
-        "ParameterValue": "148"
-    },
-    {
-        "ParameterKey": "LoadBalancerStackName",
-        "ParameterValue": "lab-public-alb"
-    },
-    {
-        "ParameterKey": "LogGroup",
-        "ParameterValue": "/lab"
-    },
-    {
-        "ParameterKey": "ParentVpcStack",
-        "ParameterValue": "base-vpc"
-    },
-    {
-        "ParameterKey": "ParentZoneStack",
-        "ParameterValue": "default-pub-hz"
-    },
-    {
-        "ParameterKey": "PathName",
-        "ParameterValue": ""
-    },
-    {
-        "ParameterKey": "ServiceName",
-        "ParameterValue": "lab-opendatacam-v2"
-    },
-    {
-        "ParameterKey": "SquadTag",
-        "ParameterValue": "Lab"
-    },
-    {
-        "ParameterKey": "ContainerCPU",
-        "ParameterValue": ".25 vCPU"
-    },
-    {
-        "ParameterKey": "ContainerMemory",
-        "ParameterValue": "512"
-    }
+  {
+    "ParameterKey": "ClusterStackName",
+    "ParameterValue": "lab-ecs-cluster"
+  },
+  {
+    "ParameterKey": "ContainerPort",
+    "ParameterValue": "80"
+  },
+  {
+    "ParameterKey": "CostCenterTag",
+    "ParameterValue": "7000"
+  },
+  {
+    "ParameterKey": "DesiredCount",
+    "ParameterValue": "1"
+  },
+  {
+    "ParameterKey": "DockerImage",
+    "ParameterValue": "nginxdemos/hello"
+  },
+  {
+    "ParameterKey": "Host",
+    "ParameterValue": ""
+  },
+  {
+    "ParameterKey": "ListenerMode",
+    "ParameterValue": "TLS"
+  },
+  {
+    "ParameterKey": "ListenerRuleHostPriority",
+    "ParameterValue": "149"
+  },
+  {
+    "ParameterKey": "ListenerRulePathPriority",
+    "ParameterValue": "150"
+  },
+  {
+    "ParameterKey": "ListenerRulePriority",
+    "ParameterValue": "148"
+  },
+  {
+    "ParameterKey": "LoadBalancerStackName",
+    "ParameterValue": "lab-public-alb"
+  },
+  {
+    "ParameterKey": "LogGroup",
+    "ParameterValue": "/lab"
+  },
+  {
+    "ParameterKey": "ParentVpcStack",
+    "ParameterValue": "base-vpc"
+  },
+  {
+    "ParameterKey": "ParentZoneStack",
+    "ParameterValue": "default-pub-hz"
+  },
+  {
+    "ParameterKey": "PathName",
+    "ParameterValue": ""
+  },
+  {
+    "ParameterKey": "ServiceName",
+    "ParameterValue": "lab-opendatacam-v2"
+  },
+  {
+    "ParameterKey": "SquadTag",
+    "ParameterValue": "Lab"
+  },
+  {
+    "ParameterKey": "ContainerCPU",
+    "ParameterValue": ".25 vCPU"
+  },
+  {
+    "ParameterKey": "ContainerMemory",
+    "ParameterValue": "512"
+  }
 ]
