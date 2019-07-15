@@ -1,5 +1,107 @@
 @import './button.css';
 
 @tailwind base;
+
+html {
+  @apply font-sans;
+}
+
 @tailwind components;
 @tailwind utilities;
+
+
+/* Section CSS */
+.section-title {
+  @apply font-medium text-3xl text-center mt-10 mb-10;
+}
+
+@screen sm {
+  .section-title {
+    @apply text-4xl;
+  }
+}
+
+@screen md {
+  .section-title {
+    @apply text-5xl;
+  }
+}
+
+@screen lg {
+  .section-title {
+    @apply text-6xl;
+  }
+}
+
+.section-content {
+  @apply flex flex-wrap mt-6 mb-6;
+}
+
+@screen md {
+  .section-content--reverse {
+    @apply flex-row-reverse;
+  }
+}
+
+.section-content-box {
+  @apply w-full p-4;
+}
+
+@screen md {
+  .section-content-box {
+    @apply w-1/2;
+  }
+}
+
+.section-content-title {
+  @apply text-gray-600 text-lg font-medium;
+}
+
+.section-content-text {
+  @apply text-justify text-lg mt-4;
+}
+
+.section-content-img {
+  @apply mx-auto;
+}
+
+
+/* End Section CSS */
+
+/* Card CSS */
+
+.card {
+  @apply mt-12;
+}
+
+.card-bordertop {
+  @apply border-2 border-black w-full mb-4;
+}
+
+.card-title {
+  @apply text-gray-600 text-lg font-medium;
+}
+
+.card-text {
+  @apply text-justify text-lg mt-4;
+}
+
+@screen md {
+  .card-title--min-height-54px {
+    min-height: 54px;
+  }
+
+  .card-text--min-height-200px {
+    min-height: 200px;
+  }
+
+  .card-text--min-height-150px {
+    min-height: 150px;
+  }
+}
+
+.card:hover .card-bordertop {
+  @apply border-gray-500;
+}
+
+
