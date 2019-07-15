@@ -1,0 +1,63 @@
+Description: ECR lab repository
+
+Parameters:
+  # NOTE: Tag params can be omitted since ECR is not tag-able at time of writing.
+  SquadTag:
+    Type: String
+    Default: Lab
+    Description: Squad, team or other entity responsible for the resources
+
+  CostCenterTag:
+    Type: String
+    Default: 7000
+
+  ServiceName:
+    Type: String
+    Description: Squad, team or other entity responsible for the resources
+
+Resources:
+  LabRepository:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: !Sub moovel/lab/${ServiceName}
+      RepositoryPolicyText:
+        Statement:
+          - Sid: Allow from dev, stage, prod, legacy
+            Effect: Allow
+            Principal:
+              AWS:
+                # NOTE: since registries are created in the shared-services account
+                # there is no need to grant access from it here
+                - arn:aws:iam::586093893509:root
+                - arn:aws:iam::021902642706:root
+                - arn:aws:iam::488864420121:root
+                - arn:aws:iam::330561757506:root
+            Action:
+              - ecr:*
+      LifecyclePolicy:
+        # Unfortunately, unlike IAM policies, CFN doesn't convert the lifecycle
+        # policy from YAML and it must be provided as a JSON string
+        LifecyclePolicyText: |-
+          {
+            "rules": [
+              {
+                "rulePriority": 100,
+                "description": "default",
+                "selection": {
+                  "tagStatus": "untagged",
+                  "countType": "imageCountMoreThan",
+                  "countNumber": 2
+                },
+                "action": {
+                  "type": "expire"
+                }
+              }
+            ]
+          }
+
+Outputs:
+  EcrUri:
+    Description: Repository name
+    Value: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.amazonaws.com/${LabRepository}
+    Export:
+      Name: !Sub ${AWS::StackName}-EcrUri

@@ -1,0 +1,335 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: Fargate Sevice Template for internet-facing services
+
+Parameters:
+  ClusterStackName:
+    Default: 'lab-ecs-cluster'
+    Description: The Stack of the ECS Cluster that this service should run on
+    Type: String
+
+  ContainerCPU:
+    Default: '.25 vCPU'
+    Description: The CPU value for the Fargate task
+    Type: String
+
+  ContainerMemory:
+    Default: '512'
+    Description: The Memory value for the Fargate task
+    Type: String
+
+  ContainerPort:
+    Default: 80
+    Description: The exposed port of you docker container
+    Type: Number
+
+  CostCenterTag:
+    Default: '7000'
+    Description: The cost center for created resources
+    Type: String
+
+  DesiredCount:
+    Default: 1
+    Description: Amount of instances of this task that should run across the cluster
+    Type: Number
+
+  DockerImage:
+    Description: Full path to docker image, including tag, with version to run in the service
+    Type: String
+
+  Host:
+    Description: If you need to create a second ListenerRule for upper Domain URL
+    Type: String
+    Default: ''
+
+  PathName:
+    Description: Path to which the listener should redirect
+    Type: String
+    Default: ''
+
+  ListenerMode:
+    Default: ''
+    Description: When on private its "", when on public its "TLS"
+    Type: String
+
+  ListenerRulePathPriority:
+    Default: 99
+    Description: The service's listener rule prio on the ALB (has to be unique on every ALB)
+    Type: Number
+
+  ListenerRuleHostPriority:
+    Default: 101
+    Description: The service's listener rule prio on the ALB (has to be unique on every ALB)
+    Type: Number
+
+  ListenerRulePriority:
+    Default: 100
+    Description: The service's listener rule priority on the ALB (has to be unique on every ALB)
+    Type: Number
+
+  LoadBalancerStackName:
+    Description: The Stack of the ALB we want to associate the service with
+    Type: String
+
+  LogGroup:
+    Default: '/lab'
+    Description: The log group for the container logs
+    Type: String
+
+  ParentVpcStack:
+    Default: 'base-vpc'
+    Description: CloudFormation stack name providing network resource IDs
+    Type: String
+
+  ParentZoneStack:
+    Default: 'default-pub-hz'
+    Description: CloudFormation stack name providing DNS resource IDs
+    Type: String
+
+  ServiceName:
+    Description: Name of the service (also represented by URL)
+    Type: String
+
+  SquadTag:
+    Default: 'Lab'
+    Description: The name of the squad owning the resources
+    Type: String
+
+Mappings:
+  ParamsByAccount:
+    '330561757506':
+      Account: legacy
+    '586093893509':
+      Account: dev
+    '021902642706':
+      Account: stage
+    '488864420121':
+      Account: prod
+    '741592215129':
+      Account: shared-services
+    '805389432169':
+      Account: jump
+
+Conditions:
+  HasHost: !Not [!Equals [!Ref Host, '']]
+  HasPathName: !Not [!Equals [!Ref PathName, '']]
+
+Resources:
+  ServiceDNSRecord:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId:
+        Fn::ImportValue: !Sub ${ParentZoneStack}-HostedZoneId
+      Comment: Service DNS Entry
+      RecordSets:
+        - Name: !Sub
+            - ${ServiceName}.${HostedZoneName}
+            - HostedZoneName:
+                Fn::ImportValue: !Sub ${ParentZoneStack}-HostedZoneName
+          Type: A
+          AliasTarget:
+            HostedZoneId:
+              Fn::ImportValue: !Sub ${LoadBalancerStackName}-CanonicalHostedZoneID
+            DNSName:
+              Fn::ImportValue: !Sub ${LoadBalancerStackName}-DNSName
+
+  Service:
+    Type: AWS::ECS::Service
+    Properties:
+      Cluster:
+        Fn::ImportValue: !Sub ${ClusterStackName}-ECSClusterArn
+      LaunchType: FARGATE
+      DesiredCount: !Ref DesiredCount
+      TaskDefinition: !Ref TaskDefinition
+      LoadBalancers:
+        - ContainerName: !Ref ServiceName
+          ContainerPort: !Ref ContainerPort
+          TargetGroupArn: !Ref TargetGroup
+      HealthCheckGracePeriodSeconds: 120
+      NetworkConfiguration:
+        AwsvpcConfiguration:
+          AssignPublicIp: DISABLED
+          SecurityGroups:
+            - Fn::ImportValue: shared-sgs-EcsCommonSg
+            - Fn::ImportValue: domain-general-sgs-EcsDomainSg
+          Subnets: !Split
+            - ','
+            - Fn::ImportValue: !Sub ${ParentVpcStack}-SubnetsPrivate
+
+  TaskDefinition:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      TaskRoleArn: !Ref TaskRole
+      Cpu: !Ref ContainerCPU
+      Memory: !Ref ContainerMemory
+      NetworkMode: awsvpc
+      RequiresCompatibilities:
+        - FARGATE
+      ExecutionRoleArn: !ImportValue managed-roles-ecs-task-execution-role-Arn
+      ContainerDefinitions:
+        - Name: !Ref ServiceName
+          Essential: true
+          Image: !Ref DockerImage
+          Memory: !Ref ContainerMemory
+          PortMappings:
+            - ContainerPort: !Ref ContainerPort
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: !Ref LogGroup
+              awslogs-region: !Ref AWS::Region
+              awslogs-stream-prefix: !Ref AWS::StackName
+          Environment:
+            - Name: ENV
+              Value: production
+
+  TargetGroup:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      VpcId:
+        Fn::ImportValue: !Sub ${ParentVpcStack}-VpcId
+      Port: !Ref ContainerPort
+      Protocol: HTTP
+      Matcher:
+        HttpCode: 200-399
+      HealthCheckIntervalSeconds: 30
+      HealthCheckPath: /
+      HealthCheckProtocol: HTTP
+      HealthCheckTimeoutSeconds: 5
+      HealthyThresholdCount: 2
+      TargetGroupAttributes:
+        - Key: deregistration_delay.timeout_seconds
+          Value: '10'
+      TargetType: ip
+      Tags:
+        - Key: CostCenter
+          Value: !Ref CostCenterTag
+        - Key: Squad
+          Value: !Ref SquadTag
+        - Key: Account
+          Value: !FindInMap [ParamsByAccount, !Ref 'AWS::AccountId', Account]
+
+  ListenerRule:
+    Type: AWS::ElasticLoadBalancingV2::ListenerRule
+    Properties:
+      ListenerArn:
+        Fn::ImportValue: !Sub ${LoadBalancerStackName}-Listener${ListenerMode}
+      Priority: !Ref ListenerRulePriority
+      Conditions:
+        - Field: host-header
+          Values:
+            - Fn::Sub:
+                - ${ServiceName}.${HostedZoneName}
+                - HostedZoneName:
+                    Fn::ImportValue: !Sub ${ParentZoneStack}-HostedZoneName
+      Actions:
+        - TargetGroupArn: !Ref TargetGroup
+          Type: forward
+
+  ListenerRuleHost:
+    Type: AWS::ElasticLoadBalancingV2::ListenerRule
+    Condition: HasHost
+    Properties:
+      ListenerArn:
+        Fn::ImportValue: !Sub ${LoadBalancerStackName}-Listener${ListenerMode}
+      Priority: !Ref ListenerRuleHostPriority
+      Conditions:
+        - Field: host-header
+          Values:
+            - !Ref Host
+      Actions:
+        - TargetGroupArn: !Ref TargetGroup
+          Type: forward
+
+  ListenerRulePath:
+    Type: AWS::ElasticLoadBalancingV2::ListenerRule
+    Condition: HasPathName
+    Properties:
+      ListenerArn:
+        Fn::ImportValue: !Sub ${LoadBalancerStackName}-Listener${ListenerMode}
+      Priority: !Ref ListenerRulePathPriority
+      Conditions:
+        - Field: path-pattern
+          Values:
+            - !Sub ${PathName}*
+      Actions:
+        - TargetGroupArn: !Ref TargetGroup
+          Type: forward
+
+  ServiceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ecs-service-${AWS::StackName}
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - ecs.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: !Sub ecs-service-${AWS::StackName}
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ec2:AuthorizeSecurityGroupIngress
+                  - ec2:Describe*
+                  - elasticloadbalancing:DeregisterInstancesFromLoadBalancer
+                  - elasticloadbalancing:Describe*
+                  - elasticloadbalancing:RegisterInstancesWithLoadBalancer
+                  - elasticloadbalancing:DeregisterTargets
+                  - elasticloadbalancing:DescribeTargetGroups
+                  - elasticloadbalancing:DescribeTargetHealth
+                  - elasticloadbalancing:RegisterTargets
+                Resource: '*'
+
+  TaskRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ecs-task-${AWS::StackName}
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - ecs-tasks.amazonaws.com
+            Action:
+              - sts:AssumeRole
+
+Outputs:
+  InternalDnsName:
+    Description: Internal DNS Record Name
+    Value:
+      Fn::Sub:
+        - ${ServiceName}.${HostedZoneName}
+        - HostedZoneName:
+            Fn::ImportValue: !Sub ${ParentZoneStack}-HostedZoneName
+
+  ExternalDnsName:
+    Description: External DNS Record Name
+    Condition: HasHost
+    Value: !Ref Host
+
+  DnsPathName:
+    Description: Path to the project
+    Condition: HasPathName
+    Value:
+      Fn::Sub:
+        - ${DnsEntryPoint}.${HostedZoneName}${PathName}
+        - DnsEntryPoint:
+            Fn::ImportValue: !Sub ${LoadBalancerStackName}-DNSSubDomainName
+          HostedZoneName:
+            Fn::ImportValue: !Sub ${ParentZoneStack}-HostedZoneName
+
+  ServiceArn:
+    Description: Arn of corresponding service
+    Value: !Ref Service
+    Export:
+      Name: !Sub ${AWS::StackName}-ServiceArn
+
+  StackName:
+    Description: Stack name
+    Value: !Sub ${AWS::StackName}
