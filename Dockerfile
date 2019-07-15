@@ -12,7 +12,7 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 
 # Install Node modules
-RUN npm install --unsafe-perm --only=prod
+RUN npm install --unsafe-perm
 
 # Run assets build (CSS,JS)
 RUN npm run export
