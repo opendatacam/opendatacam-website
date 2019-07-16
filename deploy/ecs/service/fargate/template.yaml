@@ -184,6 +184,8 @@ Resources:
               Value: production
             - Name: URL_PREFIX
               Value: /project/opendatacam-v2/
+            - Name: ROOT_URL
+              Value: movelab.dev/project/opendatacam-v2
 
   TargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
