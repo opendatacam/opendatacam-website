@@ -15,10 +15,10 @@ export default () => (
           mb-16`
         }>
           <h1 className={
-            `text-2xl 
-            sm:text-3xl 
-            md:text-4xl 
-            lg:text-5xl 
+            `text-2xl
+            sm:text-3xl
+            md:text-4xl
+            lg:text-5xl
             font-medium
             relative
             z-10`
@@ -258,8 +258,8 @@ export default () => (
         lg:max-w-xl
         pl-8
         pr-8
-        text-xl  
-        md:text-2xl 
+        text-xl
+        md:text-2xl
         lg:text-3xl
         font-medium
         relative
@@ -275,6 +275,8 @@ export default () => (
       </a>
       <img className="mr-8" src="static/background-icons/yellow-arrow.svg" />
     </div>
+    <div className="footer">
+    </div>
     <style jsx>{`
       .landing-container {
         position: relative;
@@ -282,6 +284,35 @@ export default () => (
         max-height: 900px;
         display: flex;
         flex-direction: column;
+      }
+      .landing-container h1{
+        line-height: 55px;
+        font-weight: regular;
+      }
+
+      .section-content-text, .card-text, .card-title{
+        text-align: left;
+        line-height: 22px;
+      }
+      .text-center{
+        line-height: 35px;
+      }
+
+      @media (max-width: 1023px){
+        .landing-container h1{
+          line-height: 40px;
+        }
+        .text-center{
+          line-height: 30px;
+        }
+      }
+      @media (max-width: 640px){
+        .landing-container h1{
+          line-height: 30px;
+        }
+        .text-center{
+          line-height: 25px;
+        }
       }
 
       @media (max-height: 800px) and (orientation: portrait) {
@@ -304,6 +335,10 @@ export default () => (
         position: absolute;
         top: 1rem;
         right: 1rem;
+      }
+
+      .red-string-bottom{
+        margin-bottom: 35px;
       }
 
       .green-camera {
@@ -336,10 +371,25 @@ export default () => (
         top: -50px;
       }
 
-      .red-string-bottom {
+      .red-string-camera {
         position: absolute;
         left: 0px;
         top: 100px;
+      }
+
+      @media (max-width: 800px){
+        .green-camera {
+          width: 120px;
+        }
+        .road-yellow {
+          width: 120px;
+        }
+        .blue-sun {
+          width: 150px;
+        }
+        .red-string {
+          width: 150px;
+        }
       }
 
       .video-responsive{
@@ -354,6 +404,11 @@ export default () => (
         height:100%;
         width:100%;
         position:absolute;
+      }
+      .footer{
+        background-color: #1a202c;
+        width: 100%;
+        height: 600px;
       }
     `}</style>
   </Layout>
