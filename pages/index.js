@@ -14,6 +14,7 @@ export default () => (
           pr-8
           mb-16`
         }>
+          <p>Open Data Cam</p>
           <h1 className={
             `text-2xl
             sm:text-3xl
@@ -23,10 +24,10 @@ export default () => (
             relative
             z-10`
           }>
-            An Open Source Camera to Collect Your Spatial Data
+            An open source tool to count moving things
           </h1>
           <a
-            href="https://github.com/opendatacam/opendatacam"
+            href="https://github.com/opendatacam/opendatacam" target="_blank"
             className="btn btn-black inline-flex mt-10 flex items-center justify-center"
           >
             Installation guide
@@ -40,6 +41,7 @@ export default () => (
     </div>
     <div className="video-responsive">
       <iframe src="https://player.vimeo.com/video/260744286" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+      <img className="" src="static/icons/play-button.svg" />
     </div>
     <div className="container mx-auto relative" id="about">
       <img className="yellow-string background-icon hidden md:block" src="static/background-icons/yellow-string.svg" />
@@ -50,7 +52,7 @@ export default () => (
             Introduction
           </div>
           <div className="section-content-text">
-            'Open Data Cam' is a tool that helps to quantify the world. It’s here for everyone to use! With computer vision OpenDataCam understands and quantifies moving objects. The simple setup allows everybody to become an urban data miner.
+            'Open Data Cam' is a tool that helps to quantify the world. It’s here for everyone to use! With computer vision Open Data Cam understands and quantifies moving objects. The simple setup allows everybody to become an urban data miner.
           </div>
         </div>
         <div className="section-content-box">
@@ -89,6 +91,7 @@ export default () => (
       <div className="rounded-lg border border-solid border-gray-400 p-4 sm:p-8 sm:pl-12 sm:pr-12 m-4">
         <div className="video-responsive">
           <iframe src="https://player.vimeo.com/video/346340651" width="640" height="332" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+          <img className="" src="static/icons/play-button.svg" />
         </div>
       </div>
     </div>
@@ -105,7 +108,7 @@ export default () => (
           </div>
         </div>
         <div className="section-content-box">
-          <img className="section-content-img" src="static/images/about-1.jpg" alt="Camera" />
+          <img className="section-content-img" src="static/images/own-the-data.jpg" alt="Camera" />
         </div>
       </div>
     </div>
@@ -122,7 +125,7 @@ export default () => (
           </div>
         </div>
         <div className="section-content-box">
-          <img className="section-content-img" src="static/images/about-1.jpg" alt="Camera" />
+          <img className="section-content-img" src="static/images/transparency.jpg" alt="Camera" />
         </div>
       </div>
       <div className="section-content section-content--reverse">
@@ -135,12 +138,12 @@ export default () => (
           </div>
         </div>
         <div className="section-content-box">
-          <img className="section-content-img" src="static/images/about-1.jpg" alt="Camera" />
+          <img className="section-content-img" src="static/images/privacy.jpg" alt="Camera" />
         </div>
       </div>
     </div>
     <div className="container mx-auto md:mt-32" id="testimonials">
-      <h2 className="section-title">OpenDataCam in the Wild</h2>
+      <h2 className="section-title">Open Data Cam in the Wild</h2>
       <div className="section-content">
         <div className="section-content-box">
           <div className="section-content-text">
@@ -268,7 +271,7 @@ export default () => (
         As you know, OpenDataCam is open source and non for profit. Please use this Repo to report bugs, request features, push your fixes and get in touch with the community.
       </div>
       <a
-        href="https://github.com/opendatacam/opendatacam"
+        href="https://github.com/opendatacam/opendatacam" target="_blank"
         className="btn btn-black inline-flex flex items-center justify-center mt-8"
       >
         Github repository
@@ -278,6 +281,54 @@ export default () => (
     <div className="footer">
     </div>
     <style jsx>{`
+
+      .card-bordertop{
+        border-width: 1px;
+      }
+      .container{
+        max-width: 1050px;
+      }
+      .text-yellow-400{
+        color: #FFE50F;
+      }
+
+      .section-content{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 80px;
+      }
+      .px-6{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+      }
+      .card .card-bordertop{
+        transition: 0.1s;
+      }
+
+      .card:hover .card-bordertop{
+        border-color: black;
+      }
+      h2{
+        font-size: 5rem !important;
+        line-height: 5rem !important;
+        margin-top: 150px;
+        margin-bottom: 70px;
+      }
+      @media (max-width: 640px){
+        h2{
+          font-size: 4rem !important;
+          line-height: 4rem !important;
+        }
+      }
+      a{
+        transition: 0.1s !important;
+      }
+
+      .section-content-title, .card-title{
+        font-size: 1.7rem;
+        line-height: 1.9rem !important;
+        color: #1D1D1D;
+      }
       .landing-container {
         position: relative;
         min-height: 90vh;
@@ -288,6 +339,53 @@ export default () => (
       .landing-container h1{
         line-height: 55px;
         font-weight: regular;
+        color: #1D1D1D;
+      }
+
+      .rounded-lg{
+        border: 0px;
+        background-color: #1D1D1D;
+      }
+      .section-title{
+        width: 40rem;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-ransform: translateX(-50%);
+        -moz-ransform: translateX(-50%);
+        -ms-ransform: translateX(-50%);
+        -o-ransform: translateX(-50%);
+        position: relative;
+      }
+      .mb-48{
+        margin-bottom: 100px;
+      }
+      .video-responsive img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-ransform: translate(-50%, -50%);
+        -moz-ransform: translate(-50%, -50%);
+        -ms-ransform: translate(-50%, -50%);
+        -o-ransform: translate(-50%, -50%);
+        transition: 0.1s;
+        width: 130px;
+      }
+      .video-responsive img:hover{
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      @media (max-width: 640px){
+        .video-responsive img{
+          width: 80px;
+        }
+        .section-title{
+          width: 90%;
+        }
+      }
+
+      .max-w-lg{
+        max-width: 40rem;
       }
 
       .section-content-text, .card-text, .card-title{
@@ -300,7 +398,8 @@ export default () => (
 
       @media (max-width: 1023px){
         .landing-container h1{
-          line-height: 40px;
+          line-height: 2.6rem;
+          font-size: 2.5rem;
         }
         .text-center{
           line-height: 30px;
@@ -308,10 +407,16 @@ export default () => (
       }
       @media (max-width: 640px){
         .landing-container h1{
-          line-height: 30px;
+          line-height: 2.6rem;
+          font-size: 2.5rem;
         }
         .text-center{
           line-height: 25px;
+        }
+      }
+      @media (max-width: 800px){
+        .card-bordertop{
+          margin-top: 80px !important;
         }
       }
 
@@ -328,47 +433,55 @@ export default () => (
       .blue-sun {
         position: absolute;
         top: 0;
-        left: 10%;
+        left: 15%;
+        width: 15%;
       }
 
       .red-string {
         position: absolute;
-        top: 1rem;
+        top: 20vh;
         right: 1rem;
+        width: 17vw;
       }
 
       .red-string-bottom{
         margin-bottom: 35px;
+        display: none;
       }
 
       .green-camera {
         position: absolute;
         bottom: 10%;
         right: 5%;
+        display: none;
       }
 
       .road-yellow {
         position: absolute;
-        bottom: 15%;
+        bottom: 10%;
         left: 5%;
+        width: 10vw;
       }
 
       .yellow-string {
         position: absolute;
         top: 250px;
         right: 0;
+        width: 200px;
       }
 
       .blue-arrows {
         position: absolute;
         left: 0;
         top: -50px;
+        width: 200px;
       }
 
       .green-cloud {
         position: absolute;
         right: 0px;
-        top: -50px;
+        top: 20px;
+        width: 170px;
       }
 
       .red-string-camera {
@@ -382,13 +495,15 @@ export default () => (
           width: 120px;
         }
         .road-yellow {
-          width: 120px;
+          width: 110px;
+          bottom: 3%;
         }
         .blue-sun {
-          width: 150px;
+          width: 120px;
         }
         .red-string {
           width: 150px;
+          top: 35vh;
         }
       }
 
@@ -397,6 +512,7 @@ export default () => (
         padding-bottom:56.25%;
         position:relative;
         height:0;
+        background-color: #1D1D1D;
       }
       .video-responsive iframe{
         left:0;
@@ -404,9 +520,10 @@ export default () => (
         height:100%;
         width:100%;
         position:absolute;
+        opacity: 0.2;
       }
       .footer{
-        background-color: #1a202c;
+        background-color: #1D1D1D;
         width: 100%;
         height: 600px;
       }

@@ -2,6 +2,16 @@
   @apply font-medium text-lg py-2 px-6 rounded-full;
   width: 260px;
   height: 50px;
+  color: #cbcfd7 !important;
+  background-color: #1D1D1D !important;
+  position: relative;
+}
+
+.btn:hover{
+  background-color: #343434 !important;
+}
+.btn:hover svg{
+
 }
 
 .btn-black {
