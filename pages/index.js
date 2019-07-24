@@ -14,7 +14,7 @@ export default () => (
           pr-8
           mb-16`
         }>
-          <p>Open Data Cam</p>
+          <p>Open Data Cam V2</p>
           <h1 className={
             `text-2xl
             sm:text-3xl
@@ -165,7 +165,6 @@ export default () => (
                 <div className="card-title card-title--min-height-54px">Research Project with HTW & Technologiestiftung</div>
                 <div className="card-text mt-4 card-text--min-height-200px">In coordination with the Berlin traffic administration and advising planners, we’d like to explore how the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test scenarios and data evaluation.</div>
                 <img className="mt-8" src="static/icons/arrow-right-blue.svg" />
-                <img className="w-full mt-4" src="static/images/street-jetsonnano.jpg" />
               </div>
             </a>
           </div>
@@ -176,7 +175,6 @@ export default () => (
                 <div className="card-title card-title--min-height-54px">Logistics NRW Dashboard</div>
                 <div className="card-text mt-4 card-text--min-height-200px">The “Crowd Solving” project has implemented a Logistics Dashboard including various webcam locations where OpenDataCam is supposed to be implemented to create traffic data around the Neuss Harbour area. </div>
                 <img className="mt-8" src="static/icons/arrow-right-green.svg" />
-                <img className="w-full mt-4" src="static/images/street-jetsonnano.jpg" />
               </div>
             </a>
           </div>
@@ -187,7 +185,6 @@ export default () => (
                 <div className="card-title card-title--min-height-54px">Beat the traffic</div>
                 <div className="card-text mt-4 card-text--min-height-200px">In coordination with the Berlin traffic administration and advising planners, we’d like to explore how the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test scenarios and data evaluation.</div>
                 <img className="mt-8" src="static/icons/arrow-right-yellow.svg" />
-                <img className="w-full mt-4" src="static/images/street-jetsonnano.jpg" />
               </div>
             </a>
           </div>
@@ -279,8 +276,38 @@ export default () => (
       <img className="mr-8" src="static/background-icons/yellow-arrow.svg" />
     </div>
     <div className="footer">
+      <div className="container mx-auto jsx-526758497">
+        <div className="footerContent">
+          <div className="card-text">People involved</div>
+          <div className="people">
+            <div>
+              <h1 className="card-title green">Benedikt Groß</h1>
+              <p className="card-text">Direction, Concept</p>
+            </div>
+            <div>
+              <h1 className="card-title yellow">Markus Kreutzer</h1>
+              <p className="card-text">Design, Concept, Video</p>
+            </div>
+            <div>
+              <h1 className="card-title blue">Thibault Durant</h1>
+              <p className="card-text">Development, Concept</p>
+            </div>
+            <div>
+              <h1 className="card-title red">Raphael Reimann</h1>
+              <p className="card-text">Video, Concept</p>
+            </div>
+          </div>
+          <img className="logo" src="static/icons/LabLogo.svg" />
+          <div className="copyright">
+            <p className="card-text">Open Data Cam is a project designed and developed by move lab and collaborators.</p>
+            <br></br>
+            <p className="card-text">© 2019, moovel Group GmbH</p>
+          </div>
+        </div>
+      </div>
     </div>
     <style jsx>{`
+
 
       .card-bordertop{
         border-width: 1px;
@@ -302,11 +329,12 @@ export default () => (
         padding-right: 2rem !important;
       }
       .card .card-bordertop{
-        transition: 0.1s;
+        transition: 0.3s;
       }
 
       .card:hover .card-bordertop{
         border-color: black;
+        transform: translateY(-10px);
       }
       h2{
         font-size: 5rem !important;
@@ -394,6 +422,9 @@ export default () => (
       }
       .text-center{
         line-height: 35px;
+      }
+      .text-blue-400{
+        color: #05D6FF;
       }
 
       @media (max-width: 1023px){
@@ -525,8 +556,72 @@ export default () => (
       .footer{
         background-color: #1D1D1D;
         width: 100%;
-        height: 600px;
+        color: white !important;
+      }
+
+      .footerContent{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 100px;
+        padding-bottom: 200px;
+        position: relative;
+      }
+      .people{
+        display: flex;
+      }
+      @media (max-width: 1000px){
+        .people{
+          display: block;
+        }
+      }
+      .footerContent div{
+        width: 100%;
+      }
+      .footerContent .card-title{
+        margin-top: 40px;
+      }
+      .footerContent .card-text{
+        margin-top: 5px;
+      }
+
+      .footerContent .green{
+        color: #3EAC5B;
+      }
+      .footerContent .yellow{
+        color: #FFE50F;
+      }
+      .footerContent .blue{
+        color: #05D6FF;
+      }
+      .footerContent .red{
+        color: #FF694B;
+      }
+      .footerContent .logo{
+        width: 30%;
+        position: absolute;
+        right: 0;
+        bottom: 200px;
+      }
+      .footerContent .copyright{
+        margin-top: 120px;
+        width: 50%;
+      }
+      @media (max-width: 640px){
+        .footerContent{
+          padding-bottom: 50px;
+        }
+        .footerContent .logo{
+          width: 100%;
+          margin-top: 150px;
+          position: relative;
+          bottom: 0;
+        }
+        .footerContent .copyright{
+          margin-top: 20px;
+          width: 100%;
+        }
       }
     `}</style>
+  
   </Layout>
 )
