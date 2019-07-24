@@ -3,6 +3,7 @@ import '../styles/index.css'
 import Layout from '../components/Layout';
 
 export default () => (
+
   <Layout>
     <div className="landing-container">
       <Nav />
@@ -292,9 +293,19 @@ export default () => (
               <h1 className="card-title blue">Thibault Durant</h1>
               <p className="card-text">Development, Concept</p>
             </div>
+          </div>
+          <div className="people">
             <div>
               <h1 className="card-title red">Raphael Reimann</h1>
               <p className="card-text">Video, Concept</p>
+            </div>
+            <div>
+              <h1 className="card-title blue">Florian Porada</h1>
+              <p className="card-text">Development</p>
+            </div>
+            <div>
+              <h1 className="card-title green">Neele Rittmeister</h1>
+              <p className="card-text">Illustration</p>
             </div>
           </div>
           <img className="logo" src="static/icons/LabLogo.svg" />
@@ -438,7 +449,7 @@ export default () => (
       }
       @media (max-width: 640px){
         .landing-container h1{
-          line-height: 2.6rem;
+          line-height: 2.7rem;
           font-size: 2.5rem;
         }
         .text-center{
@@ -534,7 +545,7 @@ export default () => (
         }
         .red-string {
           width: 150px;
-          top: 35vh;
+          top: 52vh;
         }
       }
 
@@ -563,7 +574,7 @@ export default () => (
         margin-left: 2rem;
         margin-right: 2rem;
         padding-top: 100px;
-        padding-bottom: 200px;
+        padding-bottom: 50px;
         position: relative;
       }
       .people{
@@ -600,10 +611,10 @@ export default () => (
         width: 30%;
         position: absolute;
         right: 0;
-        bottom: 200px;
+        bottom: 50px;
       }
       .footerContent .copyright{
-        margin-top: 120px;
+        margin-top: 220px;
         width: 50%;
       }
       @media (max-width: 640px){
@@ -622,6 +633,6 @@ export default () => (
         }
       }
     `}</style>
-  
+
   </Layout>
 )
