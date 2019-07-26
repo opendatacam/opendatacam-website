@@ -8,6 +8,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@vimeo/player": "^2.10.0",
     "@zeit/next-css": "^1.0.1",
     "next": "^9.0.0",
     "react": "^16.8.6",
