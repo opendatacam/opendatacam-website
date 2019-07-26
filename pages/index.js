@@ -48,13 +48,12 @@ export default () => (
             Installation guide
           </a>
         </div>
-        <img className="blue-sun background-icon w-2/6 sm:w-auto" src="static/background-icons/blue-sun.svg" />
+        <img className="blue-sun background-icon w-2/6 sm:w-auto" src="static/background-icons/sun_1.gif" />
         <img
           className="red-string background-icon w-2/6 sm:w-2/6 md:w-auto"
-          src="static/background-icons/red-string.svg"
+          src="static/background-icons/redwhirl.gif"
         />
-        <img className="green-camera background-icon w-2/6 sm:w-auto" src="static/background-icons/green-camera.svg" />
-        <img className="road-yellow background-icon w-2/6 sm:w-auto" src="static/background-icons/road-yellow.svg" />
+        <img className="road-yellow background-icon w-2/6 sm:w-auto" src="static/background-icons/street_1.gif" />
       </div>
     </div>
     <div className="video-responsive">
@@ -69,7 +68,7 @@ export default () => (
       <img className="" src="static/icons/play-button.svg" onClick={onClickPlay} />
     </div>
     <div className="container mx-auto relative" id="about">
-      <img className="yellow-string background-icon hidden md:block" src="static/background-icons/yellow-string.svg" />
+      <img className="yellow-string background-icon hidden md:block" src="static/background-icons/yellowwhirl.gif" />
       <h2 className="section-title">About</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
@@ -128,7 +127,7 @@ export default () => (
       </div>
     </div>
     <div className="container mx-auto relative md:mt-32" id="features">
-      <img className="blue-arrows background-icon hidden md:block" src="static/background-icons/blue-arrows.svg" />
+      <img className="blue-arrows background-icon hidden md:block" src="static/background-icons/camera_1.gif" />
       <h2 className="section-title">Features</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
@@ -146,7 +145,7 @@ export default () => (
       </div>
     </div>
     <div className="container mx-auto relative md:mt-32" id="ethics">
-      <img className="green-cloud background-icon hidden md:block" src="static/background-icons/green-cloud.svg" />
+      <img className="green-cloud background-icon hidden md:block" src="static/background-icons/cloud.gif" />
       <h2 className="section-title">Ethics</h2>
       <div className="section-content">
         <div className="section-content-box">
@@ -336,7 +335,7 @@ export default () => (
       >
         Github repository
       </a>
-      <img className="mr-8" src="static/background-icons/yellow-arrow.svg" />
+      <img className="mr-8" className="yellowArrow" src="static/background-icons/yellowarrow.gif" />
     </div>
     <div className="footer">
       <div className="container mx-auto jsx-526758497">
@@ -486,6 +485,10 @@ export default () => (
         }
       }
 
+      .rounded-lg{
+        border-radius: 2rem !important;
+      }
+
       .max-w-lg {
         max-width: 40rem;
       }
@@ -541,16 +544,18 @@ export default () => (
         position: absolute;
         top: 0;
         left: 15%;
-        width: 15%;
+        width: 20%;
       }
 
       .red-string {
         position: absolute;
         top: 20vh;
         right: 1rem;
-        width: 17vw;
+        width: 21vw;
       }
-
+      .yellowArrow{
+        width: 9vw;
+      }
       .red-string-bottom {
         margin-bottom: 35px;
         display: none;
@@ -567,21 +572,22 @@ export default () => (
         position: absolute;
         bottom: 10%;
         left: 5%;
-        width: 10vw;
+        width: 13vw;
       }
 
       .yellow-string {
         position: absolute;
         top: 250px;
         right: 0;
-        width: 200px;
+        width: 300px;
       }
 
       .blue-arrows {
         position: absolute;
         left: 0;
-        top: -50px;
+        top: 0px;
         width: 200px;
+        display: none;
       }
 
       .green-cloud {
@@ -589,6 +595,7 @@ export default () => (
         right: 0px;
         top: 20px;
         width: 170px;
+        display: none;
       }
 
       .red-string-camera {
