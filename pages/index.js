@@ -115,7 +115,7 @@ export default () => (
       <div className="rounded-lg border border-solid border-gray-400 p-4 sm:p-8 sm:pl-12 sm:pr-12 m-4">
         <div className="video-responsive">
           <iframe
-            src="https://player.vimeo.com/video/346340651"
+            src="https://player.vimeo.com/video/351143472"
             width="640"
             height="332"
             frameBorder="0"
