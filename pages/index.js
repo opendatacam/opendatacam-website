@@ -58,7 +58,7 @@ export default () => (
     </div>
     <div className="video-responsive">
       <iframe
-        src="https://player.vimeo.com/video/260744286"
+        src="https://player.vimeo.com/video/351143472"
         width="640"
         height="360"
         frameBorder="0"
@@ -115,7 +115,7 @@ export default () => (
       <div className="rounded-lg border border-solid border-gray-400 p-4 sm:p-8 sm:pl-12 sm:pr-12 m-4">
         <div className="video-responsive">
           <iframe
-            src="https://player.vimeo.com/video/351143472"
+            src="https://player.vimeo.com/video/346340651"
             width="640"
             height="332"
             frameBorder="0"
@@ -418,6 +418,8 @@ export default () => (
         h2 {
           font-size: 4rem !important;
           line-height: 4rem !important;
+          margin-top: 150px;
+          margin-bottom: 100px;
         }
       }
       a {
@@ -486,7 +488,6 @@ export default () => (
       }
 
       .rounded-lg{
-        border-radius: 2rem !important;
       }
 
       .max-w-lg {
@@ -609,15 +610,18 @@ export default () => (
           width: 120px;
         }
         .road-yellow {
-          width: 110px;
+          width: 70px;
           bottom: 3%;
         }
         .blue-sun {
-          width: 120px;
+          width: 110px;
         }
         .red-string {
-          width: 150px;
-          top: 52vh;
+          width: 100px;
+          top: 57vh;
+        }
+        .yellowArrow{
+          width: 80px;
         }
       }
 
@@ -634,7 +638,7 @@ export default () => (
         height: 100%;
         width: 100%;
         position: absolute;
-        opacity: 0.2;
+        opacity: 0.5;
       }
       .footer {
         background-color: #1d1d1d;
