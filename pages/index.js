@@ -638,7 +638,7 @@ export default () => (
         height: 100%;
         width: 100%;
         position: absolute;
-        opacity: 0.5;
+        opacity: 0.2;
       }
       .footer {
         background-color: #1d1d1d;
