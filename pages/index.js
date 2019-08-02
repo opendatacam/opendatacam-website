@@ -494,6 +494,7 @@ export default () => (
         max-width: 40rem;
       }
 
+
       .section-content-text,
       .card-text,
       .card-title {
@@ -581,6 +582,7 @@ export default () => (
         top: 250px;
         right: 0;
         width: 300px;
+        display: none;
       }
 
       .blue-arrows {
