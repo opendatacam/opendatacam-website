@@ -28,7 +28,7 @@ export default () => (
           pr-8
           mb-16`}
         >
-          <p>Open Data Cam V2</p>
+          <p>OpenDataCam</p>
           <h1
             className={`text-2xl
             sm:text-3xl
@@ -617,6 +617,7 @@ export default () => (
         }
         .blue-sun {
           width: 110px;
+          left: 100px;
         }
         .red-string {
           width: 100px;
