@@ -9,9 +9,12 @@ export default function Nav() {
   return (
     <nav>
       <ul className="flex items-center justify-between p-8 lg:pr-16 lg:pl-16 relative z-10">
-        <li>
+        <li className="flex text-black text-lg font-regular">
           <a href="./">
             <img className="w-8" src="static/odc-logo.png" />
+          </a>
+          <a href="./">
+            OpenDataCam
           </a>
         </li>
         <li>

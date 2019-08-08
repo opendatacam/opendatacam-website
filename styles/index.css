@@ -103,7 +103,3 @@ html {
 .card:hover .card-bordertop {
   @apply border-gray-500;
 }
-
-.w-8{
-  width: 4rem !important;
-}
