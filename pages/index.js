@@ -351,7 +351,7 @@ export default () => (
               <p className="card-text">Design, Concept, Video</p>
             </div>
             <div>
-              <h1 className="card-title blue">Thibault Durant</h1>
+              <h1 className="card-title blue">Thibault Durand</h1>
               <p className="card-text">Development, Concept</p>
             </div>
           </div>
