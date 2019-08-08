@@ -56,25 +56,18 @@ export default () => (
       </div>
     </div>
     <div className="video-responsive">
-      <iframe
-        src="https://player.vimeo.com/video/351143472"
-        width="640"
-        height="360"
-        frameBorder="0"
-        allow="autoplay; fullscreen"
-        allowFullScreen
-      />
+      <iframe src="https://player.vimeo.com/video/351143472" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <img className="" src="static/icons/play-button.svg" onClick={onClickPlay} />
     </div>
     <div className="container mx-auto relative" id="about">
       <img className="yellow-string background-icon hidden md:block" src="static/background-icons/yellowwhirl.gif" />
-      <h2 className="section-title">About</h2>
+      <h2 className="section-title">About OpenDataCam</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
           <div className="section-content-title">Introduction</div>
           <div className="section-content-text">
-            'Open Data Cam' is a tool that helps to quantify the world. It’s here for everyone to use! With computer
-            vision Open Data Cam understands and quantifies moving objects. The simple setup allows everybody to become
+            'OpenDataCam' is a tool that helps to quantify the world. It’s here for everyone to use! With computer
+            vision OpenDataCam understands and quantifies moving objects. The simple setup allows everybody to become
             an urban data miner.
           </div>
         </div>
@@ -100,7 +93,7 @@ export default () => (
         <div className="section-content-box">
           <div className="section-content-title">Yolo</div>
           <div className="section-content-text">
-            On the software side OpenDataCam is running YOLO — an object detection library. YOLO is trained to detect
+            On the software side OpenDataCam is running <a href="https://pjreddie.com/darknet/yolo/" target="_blank">YOLO</a> — an object detection library. YOLO is trained to detect
             objects in images. The attached camera feeds YOLO with a video, YOLO then outputs all objects in each frame.
           </div>
         </div>
@@ -135,7 +128,7 @@ export default () => (
             OpenDataCam is not connected to the cloud, you’re in full control of when to gather it. Via the interface
             you can specify which areas of the picture objects should be counted. Also the camera tracks how things move
             through the frames. Via an easy export function you can access the tally and traces and use it in any
-            thinkable way. Going all-in? Use the API to get access to the raw data points.
+            thinkable way. Going all-in? Use the <a href="https://github.com/opendatacam/opendatacam/tree/master/apidoc" target="_blank">API</a> to get access to the raw data points.
           </div>
         </div>
         <div className="section-content-box">
@@ -165,7 +158,7 @@ export default () => (
           <div className="section-content-title">Privacy</div>
           <div className="section-content-text">
             As OpenDataCam is an experimental prototype with public facing applications, privacy is something we tried
-            to bake into the design of the tool. After getting in touch with Sensor Labs privacy label, we’re currently
+            to bake into the design of the tool. After getting in touch with <a href="https://medium.com/sensor-lab/the-privacy-illusion-994ed98ec3ab" target="_blank">Sensor Labs privacy label</a>, we’re currently
             finding ways to apply the label to OpenDataCam.
           </div>
         </div>
@@ -175,7 +168,7 @@ export default () => (
       </div>
     </div>
     <div className="container mx-auto md:mt-32" id="testimonials">
-      <h2 className="section-title">Open Data Cam in the Wild</h2>
+      <h2 className="section-title">OpenDataCam in the Wild</h2>
       <div className="section-content">
         <div className="section-content-box">
           <div className="section-content-text">
@@ -324,7 +317,7 @@ export default () => (
         relative
         z-10`}
       >
-        As you know, OpenDataCam is open source and non for profit. Please use this Repo to report bugs, request
+        As you know, OpenDataCam is an open source and non commercial project. Please use this Repo to report bugs, request
         features, push your fixes and get in touch with the community.
       </div>
       <a
@@ -341,37 +334,39 @@ export default () => (
         <div className="footerContent">
           <div className="card-text">People involved</div>
           <div className="people">
-            <div>
+            <div><a href="https://benedikt-gross.de" target="_blank">
               <h1 className="card-title green">Benedikt Groß</h1>
               <p className="card-text">Direction, Concept</p>
-            </div>
-            <div>
+            </a></div>
+            <div><a href="https://markuskreutzer.com" target="_blank">
               <h1 className="card-title yellow">Markus Kreutzer</h1>
-              <p className="card-text">Design, Concept, Video</p>
-            </div>
-            <div>
+              <p className="card-text">Design, Concept</p>
+            </a></div>
+            <div><a href="https://thibault-durand.fr" target="_blank">
               <h1 className="card-title blue">Thibault Durand</h1>
               <p className="card-text">Development, Concept</p>
-            </div>
+            </a></div>
           </div>
           <div className="people">
-            <div>
+            <div><a href="https://twitter.com/whatsuprapha" target="_blank">
               <h1 className="card-title red">Raphael Reimann</h1>
               <p className="card-text">Video, Concept</p>
-            </div>
-            <div>
+            </a></div>
+            <div><a href="https://twitter.com/flooopooo" target="_blank">
               <h1 className="card-title blue">Florian Porada</h1>
               <p className="card-text">Development</p>
-            </div>
-            <div>
+            </a></div>
+            <div><a href="" target="_blank">
               <h1 className="card-title green">Neele Rittmeister</h1>
               <p className="card-text">Illustration</p>
-            </div>
+            </a></div>
           </div>
-          <img className="logo" src="static/icons/LabLogo.svg" />
+          <a href="https://move-lab.com" target="_blank">
+            <img className="logo" src="static/icons/LabLogo.svg" />
+          </a>
           <div className="copyright">
             <p className="card-text">
-              Open Data Cam is a project designed and developed by move lab and collaborators.
+              OpenDataCam is a project designed and developed by <a href="https://move-lab.com" target="_blank">move Lab</a> and collaborators.
             </p>
             <br />
             <p className="card-text">© 2019, moovel Group GmbH</p>
@@ -380,6 +375,12 @@ export default () => (
       </div>
     </div>
     <style jsx>{`
+      a{
+        border-bottom: 1px solid #181818;
+      }
+      a:hover{
+        border-bottom: 1px solid transparent;
+      }
       .card-bordertop {
         border-width: 1px;
       }
@@ -483,6 +484,8 @@ export default () => (
         }
         .section-title {
           width: 90%;
+          font-size: 2.8rem !important;
+          line-height: 2.8rem !important;
         }
       }
 
@@ -529,6 +532,7 @@ export default () => (
         .card-bordertop {
           margin-top: 80px !important;
         }
+
       }
 
       @media (max-height: 800px) and (orientation: portrait) {
@@ -616,7 +620,8 @@ export default () => (
         }
         .blue-sun {
           width: 110px;
-          left: 130px;
+          left: 80px;
+          top: 10vh;
         }
         .red-string {
           width: 100px;
@@ -665,6 +670,12 @@ export default () => (
       }
       .footerContent div {
         width: 100%;
+      }
+      .footerContent div h1, .logo{
+        transition: 0.2s !important;
+      }
+      .footerContent div h1:hover, .logo:hover{
+        opacity: 0.7 !important;
       }
       .footerContent .card-title {
         margin-top: 40px;
