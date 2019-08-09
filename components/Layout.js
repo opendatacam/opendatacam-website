@@ -4,11 +4,11 @@ import getConfig from 'next/config'
 import ReactGA from 'react-ga';
 import { useEffect } from 'react';
 
-function Layout({children}) { 
+function Layout({children}) {
     const { publicRuntimeConfig } = getConfig()
     const { ROOT_URL } = publicRuntimeConfig
-    const title = `Opendatacam`
-    const description = `An Open Source Camera to Collect Your Spatial Data`
+    const title = `OpenDataCam`
+    const description = `An open source tool to quantify the world`
     const url = `https://${ROOT_URL}`
     const urlSiteImage = `static/seo/seo.jpg`
 
