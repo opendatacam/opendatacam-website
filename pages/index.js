@@ -37,7 +37,7 @@ export default () => (
             relative
             z-10`}
           >
-            An open source tool to count moving things
+            An open source tool to quantify the world
           </h1>
           <a
             href="https://github.com/opendatacam/opendatacam"
@@ -186,9 +186,9 @@ export default () => (
       <div className="px-2 mt-12">
         <div className="flex flex-wrap -mx-2">
           <div className="w-full md:w-1/3 px-8">
-            <a href="https://beatthetraffic.moovellab.com">
+            <a href="https://www.citylab-berlin.org" target="_blank">
               <div className="card md:mt-0">
-                <div className="card-bordertop" />
+                <div className="card-bordertop blue-border" />
                 <div className="card-title card-title--min-height-54px">
                   Research Project with HTW & Technologiestiftung
                 </div>
@@ -197,34 +197,31 @@ export default () => (
                   the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test
                   scenarios and data evaluation.
                 </div>
-                <img className="mt-8" src="static/icons/arrow-right-blue.svg" />
               </div>
             </a>
           </div>
           <div className="w-full md:w-1/3 px-8">
-            <a href="https://beatthetraffic.moovellab.com">
+            <a href="https://logisticsdashboard.traffgoroad.com" target="_blank">
               <div className="card md:mt-0">
-                <div className="card-bordertop" />
+                <div className="card-bordertop red-border" />
                 <div className="card-title card-title--min-height-54px">Logistics NRW Dashboard</div>
                 <div className="card-text mt-4 card-text--min-height-200px">
                   The “Crowd Solving” project has implemented a Logistics Dashboard including various webcam locations
                   where OpenDataCam is supposed to be implemented to create traffic data around the Neuss Harbour area.{' '}
                 </div>
-                <img className="mt-8" src="static/icons/arrow-right-green.svg" />
               </div>
             </a>
           </div>
           <div className="w-full md:w-1/3 px-8">
-            <a href="https://beatthetraffic.moovellab.com">
+            <a href="https://beatthetraffic.moovellab.com" target="_blank">
               <div className="card md:mt-0">
-                <div className="card-bordertop" />
-                <div className="card-title card-title--min-height-54px">Beat the traffic</div>
+                <div className="card-bordertop yellow-border" />
+                <div className="card-title card-title--min-height-54px">Beat the Traffic X</div>
                 <div className="card-text mt-4 card-text--min-height-200px">
                   In coordination with the Berlin traffic administration and advising planners, we’d like to explore how
                   the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test
                   scenarios and data evaluation.
                 </div>
-                <img className="mt-8" src="static/icons/arrow-right-yellow.svg" />
               </div>
             </a>
           </div>
@@ -250,51 +247,51 @@ export default () => (
       <div className="px-2">
         <div className="flex flex-wrap -mx-2">
           <div className="w-full md:w-1/2 lg:w-1/4 px-6">
-            <a href="https://github.com/opendatacam/opendatacam/blob/master/documentation/jetson/JETSON_NANO.md">
+            <a href="https://opendatacam.github.io/opendatacam/documentation/jetson/JETSON_NANO.html" target="_blank">
               <div className="card lg:mt-0">
-                <div className="card-bordertop" />
+                <div className="card-bordertop green-border" />
                 <div className="card-title">OpenDataCam + Nano</div>
                 <div className="card-text mt-4">
                   small and cheap, limited accuracy at 12 fps, very low power mode (5 W)
                 </div>
-                <div className="text-green-500 font-medium mt-6">$99.00 USD</div>
+                <div className="font-regular mt-6">$99.00 USD</div>
               </div>
             </a>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 px-6">
-            <a href="https://github.com/opendatacam/opendatacam">
+            <a href="https://opendatacam.github.io/opendatacam/#-hardware-pre-requisite" target="_blank">
               <div className="card lg:mt-0">
-                <div className="card-bordertop" />
+                <div className="card-bordertop blue-border" />
                 <div className="card-title">OpenDatacam + TX2</div>
                 <div className="card-text mt-4">
                   large setup medium price, “mid accuracy at X fps, medium power consumption (10 W)
                 </div>
-                <div className="text-blue-400 font-medium mt-6">$399.00 USD</div>
+                <div className="font-regular mt-6">$399.00 USD</div>
               </div>
             </a>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 px-6">
-            <a href="https://github.com/opendatacam/opendatacam">
+            <a href="https://opendatacam.github.io/opendatacam/#-hardware-pre-requisite" target="_blank">
               <div className="card lg:mt-0">
-                <div className="card-bordertop" />
+                <div className="card-bordertop yellow-border" />
                 <div className="card-title">OpenDataCam + Xavier</div>
                 <div className="card-text mt-4">
                   large setup at highest price, full accuracy (25 fps), low power consumption (15W)
                 </div>
-                <div className="text-yellow-400 font-medium mt-6">$699.00 USD</div>
+                <div className="font-regular mt-6">$699.00 USD</div>
               </div>
             </a>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 px-6">
-            <a href="https://github.com/opendatacam/opendatacam">
+            <a href="https://opendatacam.github.io/opendatacam/#-hardware-pre-requisite" target="_blank">
               <div className="card lg:mt-0">
-                <div className="card-bordertop" />
+                <div className="card-bordertop red-border" />
                 <div className="card-title">On the cloud / local machine</div>
                 <div className="card-text mt-4">
                   On demand accuracy depending on server / local machine capacity + IP accessible cam or run on
                   pre-recorded footage
                 </div>
-                <div className="text-red-500 font-medium mt-6">$0.5 - $1 USD / hour</div>
+                <div className="font-regular mt-6">$0.5 - $1 USD / hour</div>
               </div>
             </a>
           </div>
@@ -384,6 +381,21 @@ export default () => (
       .card-bordertop {
         border-width: 1px;
       }
+      .blue-border{
+        border-color: #04D6FF;
+      }
+      .red-border{
+        border-color: #ED6B4F;
+      }
+      .yellow-border{
+        border-color: #FFEE68;
+      }
+      .green-border{
+        border-color: #48BB78;
+      }
+      .mt-6{
+        margin-top: 0.5rem !important;
+      }
       .container {
         max-width: 1050px;
       }
@@ -391,14 +403,19 @@ export default () => (
         color: #ffe50f;
       }
 
+
       .section-content {
         padding-left: 1rem;
         padding-right: 1rem;
         margin-top: 80px;
       }
-      .px-6 {
-        padding-left: 2rem !important;
-        padding-right: 2rem !important;
+      .px-6, .px-8 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      .-mx-2{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
       }
       .card .card-bordertop {
         transition: 0.3s;
@@ -501,7 +518,7 @@ export default () => (
       .card-text,
       .card-title {
         text-align: left;
-        line-height: 22px;
+        line-height: 24px;
       }
       .text-center {
         line-height: 35px;
