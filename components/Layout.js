@@ -56,7 +56,7 @@ function Layout({children}) {
                     content={description}
                 />
                 <meta property='og:type' content='website' />
-                <meta property='og:site_name' content='moovel lab' />
+                <meta property='og:site_name' content='move Lab' />
                 <meta name='twitter:card' content='summary' />
                 <meta name='twitter:site' content='@moovelLab' />
                 <meta
