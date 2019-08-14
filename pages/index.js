@@ -101,6 +101,18 @@ export default () => (
           <img className="section-content-img" src="static/images/about-3.jpg" alt="YOLO neural network" />
         </div>
       </div>
+      <div className="section-content">
+        <div className="section-content-box">
+          <div className="section-content-title">Housings</div>
+          <div className="section-content-text">
+            OpenDataCam fits in many different housings to...
+            <a href="https://github.com/opendatacam/opendatacam/blob/master/documentation/jetson/HOUSING.md">Tutorial</a>
+          </div>
+        </div>
+        <div className="section-content-box">
+          <img className="section-content-img" src="static/images/about-4.jpg" alt="RJ45 Cables" />
+        </div>
+      </div>
     </div>
     <div className="container mx-auto" id="appdemo">
       <h2 className="section-title">App demo</h2>
@@ -363,6 +375,8 @@ export default () => (
           </a>
           <div className="copyright">
             <p className="card-text">
+            <a href="https://opendatacam.moovellab.com" target="_blank">OpenDataCam V1</a>
+              <br /><br />
               OpenDataCam is a project designed and developed by <a href="https://move-lab.com" target="_blank">move Lab</a> and collaborators.
             </p>
             <br />
@@ -688,10 +702,10 @@ export default () => (
       .footerContent div {
         width: 100%;
       }
-      .footerContent div h1, .logo{
+      .footerContent div h1, .logo, .copyright a{
         transition: 0.2s !important;
       }
-      .footerContent div h1:hover, .logo:hover{
+      .footerContent div h1:hover, .logo:hover, .copyright a:hover{
         opacity: 0.7 !important;
       }
       .footerContent .card-title {
