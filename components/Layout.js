@@ -15,7 +15,7 @@ function Layout({children}) {
     // Fancy new "hook" API of react, similar to componentDidMount
     useEffect(() => {
         // TODO replace google analytics key
-        ReactGA.initialize('UA-000000-01');
+        ReactGA.initialize('UA-144727685-2');
         ReactGA.pageview(window.location.pathname + window.location.search);
     }, []);
 
