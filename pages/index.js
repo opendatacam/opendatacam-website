@@ -103,10 +103,9 @@ export default () => (
       </div>
       <div className="section-content">
         <div className="section-content-box">
-          <div className="section-content-title">Housings</div>
+          <div className="section-content-title">Housing</div>
           <div className="section-content-text">
-            OpenDataCam fits in many different housings to...
-            <a href="https://github.com/opendatacam/opendatacam/blob/master/documentation/jetson/HOUSING.md">Tutorial</a>
+            OpenDataCam is not tied to a specific housing, instead you can design your own or use an already existing casing. We used the <a href="http://naturebytes.org/our-tech/" target="_blank">Wildlife Cam Casing from Naturbytes</a> to protect the hardware in the wild. Have a look at this <a href="https://github.com/opendatacam/opendatacam/blob/master/documentation/jetson/HOUSING.md">tutorial</a> to see how the set up the the Jetson NANO in the Wildlife Cam Casing.
           </div>
         </div>
         <div className="section-content-box">
