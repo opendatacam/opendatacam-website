@@ -9,8 +9,8 @@ function Layout({children}) {
     const { ROOT_URL } = publicRuntimeConfig
     const title = `OpenDataCam`
     const description = `An open source tool to quantify the world`
-    const url = `https://${ROOT_URL}`
-    const urlSiteImage = `static/seo/seo.jpg`
+    const url = `https://www.move-lab.com/project/opendatacam/`
+    const urlSiteImage = `${url}static/seo/seo.jpg`
 
     // Fancy new "hook" API of react, similar to componentDidMount
     useEffect(() => {
