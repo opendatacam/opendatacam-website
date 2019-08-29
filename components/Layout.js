@@ -10,7 +10,7 @@ function Layout({children}) {
     const title = `OpenDataCam`
     const description = `An open source tool to quantify the world`
     const url = `https://${ROOT_URL}`
-    const urlSiteImage = `static/seo/seo.jpg`
+    const urlSiteImage = `https://${ROOT_URL}/static/seo/seo.jpg`
 
     // Fancy new "hook" API of react, similar to componentDidMount
     useEffect(() => {
