@@ -364,9 +364,32 @@ export default () => (
               <h1 className="card-title blue">Florian Porada</h1>
               <p className="card-text">Development</p>
             </a></div>
-            <div><a href="" target="_blank">
+            <div><a href="https://www.move-lab.com/people?uid=neele-rittmeister" target="_blank">
               <h1 className="card-title green">Neele Rittmeister</h1>
               <p className="card-text">Illustration</p>
+            </a></div>
+          </div>
+          <br /><br />
+          <br /><br />
+          <div className="card-text">Contributors</div>
+          <div className="people">
+            <div><a href="https://github.com/clair-hu" target="_blank">
+              <h1 className="card-title green">Clair Hu</h1>
+              <p className="card-text">Development</p>
+            </a></div>
+            <div><a href="https://github.com/kant" target="_blank">
+              <h1 className="card-title yellow">Darío Hereñú</h1>
+              <p className="card-text">Development</p>
+            </a></div>
+            <div><a href="https://github.com/thapliyalshivam" target="_blank">
+              <h1 className="card-title blue">Shivam Thapliyal</h1>
+              <p className="card-text">Development</p>
+            </a></div>
+          </div>
+          <div className="people">
+            <div><a href="https://github.com/felixJets" target="_blank">
+              <h1 className="card-title red">Felix</h1>
+              <p className="card-text">Development</p>
             </a></div>
           </div>
           <a href="https://move-lab.com" target="_blank">
