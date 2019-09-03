@@ -56,7 +56,14 @@ export default () => (
       </div>
     </div>
     <div className="video-responsive">
-      <iframe src="https://player.vimeo.com/video/351143472" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe
+        src="https://player.vimeo.com/video/351143472"
+        width="640"
+        height="332"
+        frameBorder="0"
+        allow="autoplay; fullscreen"
+        allowFullScreen
+      />
       <img className="" src="static/icons/play-button.svg" onClick={onClickPlay} />
     </div>
     <div className="container mx-auto relative" id="about">
