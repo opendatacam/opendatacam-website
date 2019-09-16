@@ -196,7 +196,7 @@ export default () => (
         </div>
         <div className="section-content-box">
           <div className="section-content-text">
-            Let us know about how you use OpenDataCam. Apart from that we also think OpenDatacam would be great
+            Let us know about how you use OpenDataCam. Apart from that we also think OpenDataCam would be great
             to…Profiling in spaces like shops, train, stations, drones...
           </div>
         </div>
@@ -280,9 +280,9 @@ export default () => (
             <a href="https://opendatacam.github.io/opendatacam/#-hardware-pre-requisite" target="_blank">
               <div className="card lg:mt-0">
                 <div className="card-bordertop blue-border" />
-                <div className="card-title">OpenDatacam + TX2</div>
+                <div className="card-title">OpenDataCam + TX2</div>
                 <div className="card-text mt-4">
-                  large setup medium price, “mid accuracy at X fps, medium power consumption (10 W)
+                  large setup medium price, mid accuracy at X fps, medium power consumption (10 W)
                 </div>
                 <div className="font-regular mt-6">$399.00 USD</div>
               </div>
