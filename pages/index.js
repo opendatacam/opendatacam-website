@@ -282,7 +282,7 @@ export default () => (
                 <div className="card-bordertop blue-border" />
                 <div className="card-title">OpenDataCam + TX2</div>
                 <div className="card-text mt-4">
-                  large setup medium price, mid accuracy at X fps, medium power consumption (10 W)
+                  large setup medium price, mid accuracy at 12 fps, medium power consumption (10 W)
                 </div>
                 <div className="font-regular mt-6">$399.00 USD</div>
               </div>
