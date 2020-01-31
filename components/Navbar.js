@@ -9,20 +9,23 @@ export default function Nav() {
   return (
     <nav>
       <ul className="flex items-center justify-between p-8 lg:pr-16 lg:pl-16 relative z-10">
-        <li>
+        <li className="flex text-black text-lg font-regular">
           <a href="./">
             <img className="w-8" src="static/odc-logo.png" />
+          </a>
+          <a href="./" className="odcTitle">
+            OpenDataCam
           </a>
         </li>
         <li>
           <ul className="flex items-center">
             <li className="mr-6">
-              <a href="https://twitter.com/moovellab">
+              <a href="https://twitter.com/moovellab" target="_blank">
                 <img width="20" height="20" src="static/icons/twitter.svg" />
               </a>
             </li>
             <li className="mr-6">
-              <a href="https://github.com/opendatacam/opendatacam">
+              <a href="https://github.com/opendatacam" target="_blank">
                 <img width="20" height="20" src="static/icons/github.svg" />
               </a>
             </li>

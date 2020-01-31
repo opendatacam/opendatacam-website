@@ -1,14 +1,23 @@
 import Head from 'next/head'
 import stylesheet from '../styles/index.css'
 import getConfig from 'next/config'
+import ReactGA from 'react-ga';
+import { useEffect } from 'react';
 
-function Layout({children}) { 
+function Layout({children}) {
     const { publicRuntimeConfig } = getConfig()
     const { ROOT_URL } = publicRuntimeConfig
-    const title = `Opendatacam`
-    const description = `An Open Source Camera to Collect Your Spatial Data`
-    const url = `https://${ROOT_URL}`
-    const urlSiteImage = `static/seo/seo.jpg`
+    const title = `OpenDataCam`
+    const description = `An open source tool to quantify the world`
+    const url = `https://www.move-lab.com/project/opendatacam/`
+    const urlSiteImage = `${url}static/seo/seo.jpg`
+
+    // Fancy new "hook" API of react, similar to componentDidMount
+    useEffect(() => {
+        // TODO replace google analytics key
+        ReactGA.initialize('UA-144727685-2');
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
 
     return (
         <>
@@ -47,7 +56,7 @@ function Layout({children}) {
                     content={description}
                 />
                 <meta property='og:type' content='website' />
-                <meta property='og:site_name' content='moovel lab' />
+                <meta property='og:site_name' content='move Lab' />
                 <meta name='twitter:card' content='summary' />
                 <meta name='twitter:site' content='@moovelLab' />
                 <meta

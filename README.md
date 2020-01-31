@@ -4,8 +4,6 @@
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![](<https://teamcity.tools.moovel.com/app/rest/builds/buildType:(id:Lab_WebsiteOpendatacamV2_Prod)/statusIcon>)](https://teamcity.tools.moovel.com/viewType.html?buildTypeId=Lab_WebsiteOpendatacamV2_Prod) |
 
-Latest version: https://out-sagkjtmrag.now.sh/
-
 **Development mode**
 
 ```bash
