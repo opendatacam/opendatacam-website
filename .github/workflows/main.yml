@@ -47,6 +47,6 @@ jobs:
       - name: Update DigitalOcean drop via doctl
         shell: bash
         run: |
-          doctl compute ssh ${{ secrets.DO_DROP_HOST }} \
+          doctl compute ssh drop001 \
             --ssh-command /www/docker/server_infrastructure/update.sh \
             --ssh-key-path ~/.ssh/id_rsa
