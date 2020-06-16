@@ -3,7 +3,7 @@ FROM node:10 as builder
 
 LABEL description="Landingpage for 'opendatacam website v2'"
 LABEL project="lab-opendatacam-v2"
-LABEL maintainer="florian.porada@free-now.com"
+LABEL maintainer="florian.porada@gmail.com"
 
 # Define working directory
 WORKDIR /usr/src/app
