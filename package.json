@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export -o docs/"
+    "export": "next build && next export -o docs/ && touch docs/.nojekyll"
   },
   "dependencies": {
     "@vimeo/player": "^2.10.0",
