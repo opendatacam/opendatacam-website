@@ -1,8 +1,5 @@
 # Opendatacam website
 
-| PROD                                                                                                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![](<https://teamcity.tools.moovel.com/app/rest/builds/buildType:(id:Lab_WebsiteOpendatacamV2_Prod)/statusIcon>)](https://teamcity.tools.moovel.com/viewType.html?buildTypeId=Lab_WebsiteOpendatacamV2_Prod) |
 
 **Development mode**
 
@@ -13,21 +10,18 @@ npm run dev
 
 Go to [http://localhost:3000](http://localhost:3000)
 
-**Production build (static)**
+**Production build (static in github pages)**
 
 ```bash
 npm install
 npm run export
 
-# Static files are in out/ directory
+# Static files are in docs/ directory
+
+git add .
+git push
 ```
 
-**Production build (node.js server)**
+NOTE: very important to have a `.nojekyll` file in the docs/ directory so Github pages doesn't ignore the `_next` directory.
 
-```bash
-npm install
-npm run build
-npm run start
-```
-
-Go to [http://localhost:3000](http://localhost:3000)
+This file is created automaticly with `npm run export`
