@@ -19,7 +19,7 @@ export default () => (
   <Layout>
     <div className="landing-container">
       <Nav />
-      <div className="hero flex justify-center items-center flex-1">
+      <div className="flex items-center justify-center flex-1 hero">
         <div
           className={`
           text-center
@@ -42,17 +42,17 @@ export default () => (
           <a
             href="https://github.com/opendatacam/opendatacam"
             target="_blank"
-            className="btn btn-black inline-flex mt-10 flex items-center justify-center"
+            className="flex inline-flex items-center justify-center mt-10 btn btn-black"
           >
             Installation guide
           </a>
         </div>
-        <img className="blue-sun background-icon w-2/6 sm:w-auto" src="static/background-icons/sun_1.gif" />
+        <img className="w-2/6 blue-sun background-icon sm:w-auto" src="static/background-icons/sun_1.gif" />
         <img
-          className="red-string background-icon w-2/6 sm:w-2/6 md:w-auto"
+          className="w-2/6 red-string background-icon sm:w-2/6 md:w-auto"
           src="static/background-icons/redwhirl.gif"
         />
-        <img className="road-yellow background-icon w-2/6 sm:w-auto" src="static/background-icons/street_1.gif" />
+        <img className="w-2/6 road-yellow background-icon sm:w-auto" src="static/background-icons/street_1.gif" />
       </div>
     </div>
     <div className="video-responsive">
@@ -66,8 +66,8 @@ export default () => (
       />
       <img className="" src="static/icons/play-button.svg" onClick={onClickPlay} />
     </div>
-    <div className="container mx-auto relative" id="about">
-      <img className="yellow-string background-icon hidden md:block" src="static/background-icons/yellowwhirl.gif" />
+    <div className="container relative mx-auto" id="about">
+      <img className="hidden yellow-string background-icon md:block" src="static/background-icons/yellowwhirl.gif" />
       <h2 className="section-title">About OpenDataCam</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
@@ -122,7 +122,7 @@ export default () => (
     </div>
     <div className="container mx-auto" id="appdemo">
       <h2 className="section-title">App demo</h2>
-      <div className="rounded-lg border border-solid border-gray-400 p-4 sm:p-8 sm:pl-12 sm:pr-12 m-4">
+      <div className="p-4 m-4 border border-gray-400 border-solid rounded-lg sm:p-8 sm:pl-12 sm:pr-12">
         <div className="video-responsive">
           <iframe
             src="https://player.vimeo.com/video/346340651"
@@ -136,8 +136,8 @@ export default () => (
         </div>
       </div>
     </div>
-    <div className="container mx-auto relative md:mt-32" id="features">
-      <img className="blue-arrows background-icon hidden md:block" src="static/background-icons/camera_1.gif" />
+    <div className="container relative mx-auto md:mt-32" id="features">
+      <img className="hidden blue-arrows background-icon md:block" src="static/background-icons/camera_1.gif" />
       <h2 className="section-title">Features</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
@@ -154,8 +154,8 @@ export default () => (
         </div>
       </div>
     </div>
-    <div className="container mx-auto relative md:mt-32" id="ethics">
-      <img className="green-cloud background-icon hidden md:block" src="static/background-icons/cloud.gif" />
+    <div className="container relative mx-auto md:mt-32" id="ethics">
+      <img className="hidden green-cloud background-icon md:block" src="static/background-icons/cloud.gif" />
       <h2 className="section-title">Ethics</h2>
       <div className="section-content">
         <div className="section-content-box">
@@ -203,14 +203,14 @@ export default () => (
       </div>
       <div className="px-2 mt-12">
         <div className="flex flex-wrap -mx-2">
-          <div className="w-full md:w-1/3 px-8">
+          <div className="w-full px-8 md:w-1/3">
             <a href="https://www.citylab-berlin.org" target="_blank">
               <div className="card md:mt-0">
                 <div className="card-bordertop blue-border" />
                 <div className="card-title card-title--min-height-54px">
                   Research Project with HTW & Technologiestiftung
                 </div>
-                <div className="card-text mt-4 card-text--min-height-200px">
+                <div className="mt-4 card-text card-text--min-height-200px">
                   In coordination with the Berlin traffic administration and advising planners, we’d like to explore how
                   the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test
                   scenarios and data evaluation.
@@ -218,24 +218,24 @@ export default () => (
               </div>
             </a>
           </div>
-          <div className="w-full md:w-1/3 px-8">
+          <div className="w-full px-8 md:w-1/3">
             <a href="https://logisticsdashboard.traffgoroad.com" target="_blank">
               <div className="card md:mt-0">
                 <div className="card-bordertop red-border" />
                 <div className="card-title card-title--min-height-54px">Logistics NRW Dashboard</div>
-                <div className="card-text mt-4 card-text--min-height-200px">
+                <div className="mt-4 card-text card-text--min-height-200px">
                   The “Crowd Solving” project has implemented a Logistics Dashboard including various webcam locations
                   where OpenDataCam is supposed to be implemented to create traffic data around the Neuss Harbour area.{' '}
                 </div>
               </div>
             </a>
           </div>
-          <div className="w-full md:w-1/3 px-8">
+          <div className="w-full px-8 md:w-1/3">
             <a href="https://beatthetraffic.moovellab.com" target="_blank">
               <div className="card md:mt-0">
                 <div className="card-bordertop yellow-border" />
                 <div className="card-title card-title--min-height-54px">Beat the Traffic X</div>
-                <div className="card-text mt-4 card-text--min-height-200px">
+                <div className="mt-4 card-text card-text--min-height-200px">
                   In coordination with the Berlin traffic administration and advising planners, we’d like to explore how
                   the OpenDataCam performs in real-world settings. We’ll take a closer look on accuracy and test
                   scenarios and data evaluation.
@@ -264,60 +264,60 @@ export default () => (
       </div>
       <div className="px-2">
         <div className="flex flex-wrap -mx-2">
-          <div className="w-full md:w-1/2 lg:w-1/4 px-6">
+          <div className="w-full px-6 md:w-1/2 lg:w-1/4">
             <a href="https://opendatacam.github.io/opendatacam/documentation/jetson/JETSON_NANO.html" target="_blank">
               <div className="card lg:mt-0">
                 <div className="card-bordertop green-border" />
                 <div className="card-title">OpenDataCam + Nano</div>
-                <div className="card-text mt-4">
+                <div className="mt-4 card-text">
                   small and cheap, limited accuracy at 12 fps, very low power mode (5 W)
                 </div>
-                <div className="font-regular mt-6">$99.00 USD</div>
+                <div className="mt-6 font-regular">$99.00 USD</div>
               </div>
             </a>
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 px-6">
+          <div className="w-full px-6 md:w-1/2 lg:w-1/4">
             <a href="https://opendatacam.github.io/opendatacam/#-hardware-pre-requisite" target="_blank">
               <div className="card lg:mt-0">
                 <div className="card-bordertop blue-border" />
                 <div className="card-title">OpenDataCam + TX2</div>
-                <div className="card-text mt-4">
+                <div className="mt-4 card-text">
                   large setup medium price, mid accuracy at 12 fps, medium power consumption (10 W)
                 </div>
-                <div className="font-regular mt-6">$399.00 USD</div>
+                <div className="mt-6 font-regular">$399.00 USD</div>
               </div>
             </a>
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 px-6">
+          <div className="w-full px-6 md:w-1/2 lg:w-1/4">
             <a href="https://opendatacam.github.io/opendatacam/#-hardware-pre-requisite" target="_blank">
               <div className="card lg:mt-0">
                 <div className="card-bordertop yellow-border" />
                 <div className="card-title">OpenDataCam + Xavier</div>
-                <div className="card-text mt-4">
+                <div className="mt-4 card-text">
                   large setup at highest price, full accuracy (25 fps), low power consumption (15W)
                 </div>
-                <div className="font-regular mt-6">$699.00 USD</div>
+                <div className="mt-6 font-regular">$699.00 USD</div>
               </div>
             </a>
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 px-6">
+          <div className="w-full px-6 md:w-1/2 lg:w-1/4">
             <a href="https://opendatacam.github.io/opendatacam/#-hardware-pre-requisite" target="_blank">
               <div className="card lg:mt-0">
                 <div className="card-bordertop red-border" />
                 <div className="card-title">On the cloud / local machine</div>
-                <div className="card-text mt-4">
+                <div className="mt-4 card-text">
                   On demand accuracy depending on server / local machine capacity + IP accessible cam or run on
                   pre-recorded footage
                 </div>
-                <div className="font-regular mt-6">$0.5 - $1 USD / hour</div>
+                <div className="mt-6 font-regular">$0.5 - $1 USD / hour</div>
               </div>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div className="container mx-auto mt-32 mb-48 flex justify-center items-center flex-col relative">
-      <img className="red-string-bottom background-icon hidden md:block" src="static/background-icons/red-string.svg" />
+    <div className="container relative flex flex-col items-center justify-center mx-auto mt-32 mb-48">
+      <img className="hidden red-string-bottom background-icon md:block" src="static/background-icons/red-string.svg" />
       <div
         className={`
         text-center
@@ -338,7 +338,7 @@ export default () => (
       <a
         href="https://github.com/opendatacam/opendatacam"
         target="_blank"
-        className="btn btn-black inline-flex flex items-center justify-center mt-8"
+        className="flex inline-flex items-center justify-center mt-8 btn btn-black"
       >
         Github repository
       </a>
@@ -380,36 +380,13 @@ export default () => (
           <br /><br />
           <div className="card-text">Contributors</div>
           <div className="people">
-            <div><a href="https://github.com/clair-hu" target="_blank">
-              <h1 className="card-title green">Clair Hu</h1>
-              <p className="card-text">Development</p>
-            </a></div>
-            <div><a href="https://github.com/kant" target="_blank">
-              <h1 className="card-title yellow">Darío Hereñú</h1>
-              <p className="card-text">Development</p>
-            </a></div>
-            <div><a href="https://github.com/thapliyalshivam" target="_blank">
-              <h1 className="card-title blue">Shivam Thapliyal</h1>
-              <p className="card-text">Development</p>
-            </a></div>
+            <a href="https://github.com/opendatacam/opendatacam/graphs/contributors">
+              <h1 className="card-title yellow">See complete list of contributors on GitHub</h1>
+            </a>
           </div>
-          <div className="people">
-            <div><a href="https://github.com/felixJets" target="_blank">
-              <h1 className="card-title red">Felix</h1>
-              <p className="card-text">Development</p>
-            </a></div>
-          </div>
-          <a href="https://move-lab.com" target="_blank">
-            <img className="logo" src="static/icons/LabLogo.svg" />
-          </a>
           <div className="copyright">
-            <p className="card-text">
-            <a href="https://opendatacam.moovellab.com" target="_blank">OpenDataCam V1</a>
-              <br /><br />
-              OpenDataCam is a project designed and developed by <a href="https://move-lab.com" target="_blank">move Lab</a> and collaborators.
-            </p>
+              OpenDataCam was initiated by <a href="https://move-lab.com" target="_blank">move lab</a> <i>(Benedikt Groß, Markus Kreutzer, Raphael Reimann, Florian Porada)</i> and Thibault Durand. It is developed by a small team of volunteers now.
             <br />
-            <p className="card-text">© 2019, moovel Group GmbH</p>
           </div>
         </div>
       </div>
@@ -763,8 +740,8 @@ export default () => (
         bottom: 50px;
       }
       .footerContent .copyright {
-        margin-top: 220px;
-        width: 50%;
+        margin-top: 100px;
+        margin-bottom: 100px;
       }
       @media (max-width: 640px) {
         .footerContent {
