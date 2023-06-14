@@ -6,4 +6,6 @@ module.exports = {
         ROOT_URL: process.env.ROOT_URL || ''
     },
     assetPrefix: isProd ? './' : '',
+    output: 'export',
+    distDir: 'docs',
 }
