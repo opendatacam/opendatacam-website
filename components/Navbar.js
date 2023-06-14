@@ -12,15 +12,10 @@ export default function Nav() {
         </li>
         <li>
           <ul className="flex items-center">
-            <li className="">
-              <iframe src="https://ghbtns.com/github-btn.html?user=opendatacam&repo=opendatacam&type=watch&count=true&size=large"
-                frameborder="0" 
-                scrolling="0" 
-                width="150" 
-                height="30" 
-                title="GitHub"
-                style={{ objectPosition: 'right', objectFit: 'none' }}>
-              </iframe>
+            <li className="mr-6">
+              <a href="https://github.com/opendatacam" target="_blank">
+                <img width="20" height="20" src="static/icons/github.svg" />
+              </a>
             </li>
           </ul>
         </li>
