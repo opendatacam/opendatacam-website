@@ -1,7 +1,6 @@
 import Player from '@vimeo/player';
 
 import Nav from '../components/Navbar';
-import '../styles/index.css';
 import Layout from '../components/Layout';
 
 const onClickPlay = e => {

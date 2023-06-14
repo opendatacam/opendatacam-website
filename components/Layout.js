@@ -1,8 +1,5 @@
 import Head from 'next/head'
-import stylesheet from '../styles/index.css'
 import getConfig from 'next/config'
-import ReactGA from 'react-ga';
-import { useEffect } from 'react';
 
 function Layout({children}) {
     const { publicRuntimeConfig } = getConfig()
@@ -11,13 +8,6 @@ function Layout({children}) {
     const description = `An open source tool to quantify the world`
     const url = `https://www.move-lab.com/project/opendatacam/`
     const urlSiteImage = `${url}static/seo/seo.jpg`
-
-    // Fancy new "hook" API of react, similar to componentDidMount
-    useEffect(() => {
-        // TODO replace google analytics key
-        ReactGA.initialize('UA-144727685-2');
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
 
     return (
         <>
@@ -71,7 +61,6 @@ function Layout({children}) {
                     name='twitter:image'
                     content={urlSiteImage}
                 />
-                <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
             </Head>
             {children}
         </>
