@@ -331,8 +331,8 @@ export default () => (
         relative
         z-10`}
       >
-        As you know, OpenDataCam is an open source and non commercial project. Please use this Repo to report bugs, request
-        features, push your fixes and get in touch with the community.
+        As you know, OpenDataCam is an open source project. Please use this Repo to report bugs, request
+        features, ask for support, contribute to the project and get in touch with the community.
       </div>
       <a
         href="https://github.com/opendatacam/opendatacam"
