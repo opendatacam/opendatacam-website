@@ -348,32 +348,20 @@ export default () => (
         <div className="footerContent">
           <div className="card-text">People involved</div>
           <div className="people">
-            <div><a href="https://benedikt-gross.de" target="_blank">
-              <h1 className="card-title green">Benedikt Groß</h1>
-              <p className="card-text">Direction, Concept</p>
-            </a></div>
-            <div><a href="https://markuskreutzer.com" target="_blank">
-              <h1 className="card-title yellow">Markus Kreutzer</h1>
-              <p className="card-text">Design, Concept</p>
-            </a></div>
-            <div><a href="https://thibault-durand.fr" target="_blank">
-              <h1 className="card-title blue">Thibault Durand</h1>
-              <p className="card-text">Development, Concept</p>
-            </a></div>
-          </div>
-          <div className="people">
-            <div><a href="https://twitter.com/whatsuprapha" target="_blank">
-              <h1 className="card-title red">Raphael Reimann</h1>
-              <p className="card-text">Video, Concept</p>
-            </a></div>
-            <div><a href="https://twitter.com/flooopooo" target="_blank">
-              <h1 className="card-title blue">Florian Porada</h1>
-              <p className="card-text">Development</p>
-            </a></div>
-            <div><a href="https://www.move-lab.com/people?uid=neele-rittmeister" target="_blank">
-              <h1 className="card-title green">Neele Rittmeister</h1>
-              <p className="card-text">Illustration</p>
-            </a></div>
+            <div>
+              <a href="https://vsaw.net" target="_blank">
+                <h1 className="card-title green">Valentin Sawadski</h1>
+              </a>
+              <p className="card-text">
+                <a href="https://github.com/vsaw" target="_blank">
+                  <img width="20" height="20" src="static/icons/github-mark-white.svg" />
+                </a>&nbsp;
+                <a href="https://mastodon.social/@vsaw" target="_blank" rel="me">
+                  <img width="20" height="20" src="static/icons/mastodon-white.svg" />
+                </a>&nbsp;
+                <a href="mailto:valentin@opendata.cam" target="_blank">@</a>
+              </p>
+            </div>
           </div>
           <br /><br />
           <br /><br />
@@ -384,7 +372,12 @@ export default () => (
             </a>
           </div>
           <div className="copyright">
-              OpenDataCam was initiated by <a href="https://move-lab.com" target="_blank">move lab</a> <i>(Benedikt Groß, Markus Kreutzer, Raphael Reimann, Florian Porada)</i> and Thibault Durand. It is developed by a small team of volunteers now.
+              OpenDataCam was initiated by <a href="https://move-lab.com" target="_blank">move lab</a> 
+              <i>(<a href="https://benedikt-gross.de" target="_blank">Benedikt Groß</a>,&nbsp;
+                <a href="https://markuskreutzer.com" target="_blank">Markus Kreutzer</a>,&nbsp;
+                <a href="https://twitter.com/whatsuprapha" target="_blank">Raphael Reimann</a>,&nbsp;
+                <a href="https://florianporada.com/" target="_blank">Florian Porada</a>,&nbsp;Neele Rittmeister)
+              </i> and <a href="https://thibault-durand.fr" target="_blank">Thibault Durand</a>. It is developed by a small team of volunteers now.
             <br />
           </div>
         </div>
@@ -704,6 +697,9 @@ export default () => (
           display: block;
         }
       }
+      .people img {
+        display: inline;
+      }
       .footerContent div {
         width: 100%;
       }
@@ -739,7 +735,7 @@ export default () => (
         bottom: 50px;
       }
       .footerContent .copyright {
-        margin-top: 100px;
+        margin-top: 20px;
         margin-bottom: 100px;
       }
       @media (max-width: 640px) {
