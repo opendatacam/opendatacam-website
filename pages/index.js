@@ -346,20 +346,23 @@ export default () => (
     <div className="footer">
       <div className="container mx-auto jsx-526758497">
         <div className="footerContent">
-          <div className="card-text">People involved</div>
+          <div className="card-text" id="people_involved">People involved</div>
           <div className="people">
             <div>
               <a href="https://vsaw.net" target="_blank">
                 <h1 className="card-title green">Valentin Sawadski</h1>
               </a>
               <p className="card-text">
-                <a href="https://github.com/vsaw" target="_blank">
+                <a href="https://github.com/vsaw" target="_blank" style={{margin: '0.5em'}}>
                   <img width="20" height="20" src="static/icons/github-mark-white.svg" />
-                </a>&nbsp;
-                <a href="https://mastodon.social/@vsaw" target="_blank" rel="me">
+                </a>
+                <a href="https://mastodon.social/@vsaw" target="_blank" rel="me" style={{margin: '0.5em'}}>
                   <img width="20" height="20" src="static/icons/mastodon-white.svg" />
-                </a>&nbsp;
-                <a href="mailto:valentin@opendata.cam" target="_blank">@</a>
+                </a>
+                <a href="https://www.linkedin.com/in/sawadski/" target="_blank"style={{margin: '0.5em'}}>
+                  <img width="20" height="20" src="static/icons/linkedin.png" />
+                </a>
+                <a href="mailto:valentin@opendata.cam" target="_blank" style={{margin: '0.5em'}}>@</a>
               </p>
             </div>
           </div>

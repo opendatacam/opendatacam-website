@@ -12,7 +12,7 @@ export default function Nav() {
         </li>
         <li>
           <ul className="flex items-center">
-            <li className="mr-6">
+            <li className="">
               <a href="https://github.com/opendatacam" target="_blank">
                 <img width="20" height="20" src="static/icons/github.svg" />
               </a>
