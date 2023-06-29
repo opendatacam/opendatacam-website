@@ -353,7 +353,10 @@ export default () => (
                 <h1 className="card-title green">Valentin Sawadski</h1>
               </a>
               <p className="card-text">
-                <a href="https://github.com/vsaw" target="_blank" style={{margin: '0.5em'}}>
+                Project Lead
+              </p>
+              <p className="card-text">
+                <a href="https://github.com/vsaw" target="_blank" style={{margin: '0.5em', marginLeft: '0'}}>
                   <img width="20" height="20" src="static/icons/github-mark-white.svg" />
                 </a>
                 <a href="https://mastodon.social/@vsaw" target="_blank" rel="me" style={{margin: '0.5em'}}>
@@ -366,22 +369,20 @@ export default () => (
               </p>
             </div>
           </div>
-          <br /><br />
-          <br /><br />
-          <div className="card-text">Contributors</div>
-          <div className="people">
-            <a href="https://github.com/opendatacam/opendatacam/graphs/contributors">
-              <h1 className="card-title yellow">See complete list of contributors on GitHub</h1>
-            </a>
-          </div>
+          <br />
+          <br />
           <div className="copyright">
-              OpenDataCam was initiated by <a href="https://move-lab.com" target="_blank">move lab</a> 
+              OpenDataCam was initiated by move lab 
               <i>(<a href="https://benedikt-gross.de" target="_blank">Benedikt Groß</a>,&nbsp;
                 <a href="https://markuskreutzer.com" target="_blank">Markus Kreutzer</a>,&nbsp;
                 <a href="https://twitter.com/whatsuprapha" target="_blank">Raphael Reimann</a>,&nbsp;
                 <a href="https://florianporada.com/" target="_blank">Florian Porada</a>,&nbsp;Neele Rittmeister)
               </i> and <a href="https://thibault-durand.fr" target="_blank">Thibault Durand</a>. It is developed by a small team of volunteers now.
-            <br />
+              <br />
+              <br />
+              <a href="https://github.com/opendatacam/opendatacam/graphs/contributors">
+                See complete list of contributors on GitHub
+              </a>
           </div>
         </div>
       </div>
