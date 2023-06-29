@@ -6,7 +6,7 @@ function Layout({children}) {
     const { ROOT_URL } = publicRuntimeConfig
     const title = `OpenDataCam`
     const description = `An open source tool to quantify the world`
-    const url = `https://www.move-lab.com/project/opendatacam/`
+    const url = `https://opendata.cam/`
     const urlSiteImage = `${url}static/seo/seo.jpg`
 
     return (
@@ -46,9 +46,9 @@ function Layout({children}) {
                     content={description}
                 />
                 <meta property='og:type' content='website' />
-                <meta property='og:site_name' content='move Lab' />
+                <meta property='og:site_name' content='OpenDataCam' />
                 <meta name='twitter:card' content='summary' />
-                <meta name='twitter:site' content='@moovelLab' />
+                <meta name='twitter:site' content='@OpenDataCam' />
                 <meta
                     name='twitter:title'
                     content={title}
