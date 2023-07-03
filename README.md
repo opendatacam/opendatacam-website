@@ -1,27 +1,41 @@
-# Opendatacam website
+# Website
 
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-**Development mode**
+### Installation
 
-```bash
-npm install
-npm run dev
+```
+$ yarn
 ```
 
-Go to [http://localhost:3000](http://localhost:3000)
+### Local Development
 
-**Production build (static in github pages)**
-
-```bash
-npm install
-npm run export
-
-# Static files are in docs/ directory
-
-git add .
-git push
+```
+$ yarn start
 ```
 
-NOTE: very important to have a `.nojekyll` file in the docs/ directory so Github pages doesn't ignore the `_next` directory. This file should be created automaticly with `npm run export`
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-NOTE2: need also to have a `CNAME` file in the `docs/` with the custom domaine `opendata.cam` , it should be generated at build time. This file should be created automaticly with `npm run export`
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
