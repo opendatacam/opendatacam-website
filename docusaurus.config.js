@@ -19,7 +19,8 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'opendatacam', // Usually your GitHub org/user name.
-  projectName: 'opendatacam', // Usually your repo name.
+  projectName: 'opendatacam-website', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
