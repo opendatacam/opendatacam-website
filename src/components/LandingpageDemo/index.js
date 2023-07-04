@@ -1,21 +1,26 @@
-import React from 'react';
-import Player from '@vimeo/player';
+import React, { Component } from 'react';
 
-import DocusaurusLogoWithKeytar from '@site/static/icons/play-button.svg';
+import PlayButton from '@site/static/icons/play-button.svg';
 
-const onClickPlay = e => {
-    const parent = e.currentTarget.parentElement;
-    const iframe = parent.getElementsByTagName('iframe')[0];
-    const player = new Player(iframe);
 
-    e.currentTarget.style.display = 'none';
-    iframe.style.opacity = '1';
+export default class LandingpageDemo extends Component {
+    player = null;
 
-    player.play();
-};
+    componentDidMount() {
+        const VimeoPlayer = require('@vimeo/player').default;
+        const iframe = document.getElementById('demovideo');
+        this.player = new VimeoPlayer(iframe);
+        this.player.on('play', function() {
+            document.getElementById('demoplaybutton').style.display = 'none';
+            iframe.style.opacity = '1';
+        });
+    }
 
-export default function LandingpageDemo() {
-    return <div className="container mx-auto" id="appdemo">
+    onClickPlay = e => {
+        this.player.play();
+    };
+
+    render() {return <div className="container mx-auto" id="appdemo">
     <h2 className="section-title">App demo</h2>
     <div className="p-4 m-4 border border-gray-400 border-solid rounded-lg sm:p-8 sm:pl-12 sm:pr-12">
       <div className="video-responsive">
@@ -26,8 +31,9 @@ export default function LandingpageDemo() {
           frameBorder="0"
           allow="autoplay; fullscreen"
           allowFullScreen
+          id='demovideo'
         />
-        <DocusaurusLogoWithKeytar title="Play Video" onClick={onClickPlay} />
+        <PlayButton title="Play Video" onClick={this.onClickPlay} id="demoplaybutton" />
       </div>
     </div>
     <style jsx="true">{`
@@ -69,4 +75,5 @@ export default function LandingpageDemo() {
             }
         `}</style>
   </div>
+  }
 }

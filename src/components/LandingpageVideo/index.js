@@ -1,21 +1,25 @@
-import React from 'react';
-import Player from '@vimeo/player';
+import React, { Component } from 'react';
 
 import PlayButton from '@site/static/icons/play-button.svg';
 
-const onClickPlay = e => {
-    const parent = e.currentTarget.parentElement;
-    const iframe = parent.getElementsByTagName('iframe')[0];
-    const player = new Player(iframe);
+export default class LandingpageVideo extends Component {
+    player = null;
 
-    e.currentTarget.style.display = 'none';
-    iframe.style.opacity = '1';
+    componentDidMount() {
+        const VimeoPlayer = require('@vimeo/player').default;
+        const iframe = document.getElementById('landingpagevideo');
+        this.player = new VimeoPlayer(iframe);
+        this.player.on('play', function() {
+            document.getElementById('playbutton').style.display = 'none';
+            iframe.style.opacity = '1';
+        });
+    }
 
-    player.play();
-};
+    onClickPlay = e => {
+        this.player.play();
+    };
 
-export default function LandingpageVideo() {
-    return <div className="video-responsive">
+    render() { return <div className="video-responsive">
         <iframe
             src="https://player.vimeo.com/video/351143472"
             width="640"
@@ -23,8 +27,9 @@ export default function LandingpageVideo() {
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
+            id="landingpagevideo"
         />
-        <PlayButton title="Play Video" onClick={onClickPlay} />;
+        <PlayButton title="Play Video" onClick={this.onClickPlay} id="playbutton" />
         <style jsx="true">{`
             .video-responsive svg {
                 position: absolute;
@@ -63,5 +68,6 @@ export default function LandingpageVideo() {
                 opacity: 0.2;
             }
         `}</style>
-    </div>
+        </div>
+    }
 }
