@@ -82,7 +82,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'OpenDataCam',
             items: [
               /*{
                 label: 'Tutorial',
@@ -113,6 +113,10 @@ const config = {
               {
                 label: 'Imprint',
                 href: '/imprint',
+              },
+              {
+                label: 'Privacy Policy',
+                href: '/privacy-policy',
               },
             ],
           },
