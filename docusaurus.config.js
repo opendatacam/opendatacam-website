@@ -82,7 +82,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'OpenDataCam',
             items: [
               /*{
                 label: 'Tutorial',
@@ -93,6 +93,10 @@ const config = {
           {
             title: 'Community',
             items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/opendatacam/opendatacam',
+              },
               {
                 label: 'LinkedIn',
                 href: 'https://www.linkedin.com/company/opendatacam',
@@ -107,8 +111,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/opendatacam/opendatacam',
+                label: 'Imprint',
+                href: '/imprint',
+              },
+              {
+                label: 'Privacy Policy',
+                href: '/privacy-policy',
               },
             ],
           },
