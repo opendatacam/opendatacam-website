@@ -52,7 +52,7 @@ html {
 }
 
 .section-content-title {
-  @apply text-gray-600 text-lg font-medium;
+  @apply text-lg font-medium;
 }
 
 .section-content-text {
