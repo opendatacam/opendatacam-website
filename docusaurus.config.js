@@ -58,13 +58,14 @@ const config = {
     ({
       // Replace with your project's social card
       metadata: [
-        { property: 'og:description', content: 'An open source tool to quantify the world' },
+        { property: 'og:tile', content: 'OpenDataCam - An open source tool to quantify the world' },
+        { property: 'og:description', content: "OpenDataCam is a tool that helps to quantify the world. With computer vision OpenDataCam understands and quantifies moving objects in videos. The simple setup allows everybody to start counting, cars, bicycles, sheeps and much more!" },
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'OpenDataCam' },
-        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@OpenDataCam' },
-        { name: 'twitter:title', content: 'OpenDataCam' },
-        { name: 'twitter:description', content: 'An open source tool to quantify the world' },
+        { name: 'twitter:title', content: 'OpenDataCam - An open source tool to quantify the world' },
+        { name: 'twitter:description', content: 'OpenDataCam is a tool that helps to quantify the world. With computer vision OpenDataCam understands and quantifies moving objects in videos. The simple setup allows everybody to start counting, cars, bicycles, sheeps and much more!' },
         { name: 'twitter:image', content: 'img/seo.jpg' },
       ],
       image: 'img/seo.jpg',
