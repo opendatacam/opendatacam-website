@@ -284,13 +284,6 @@ export default function LandingpageHeader() {
           }
         }
 
-        .footerContent {
-          margin-left: 2rem;
-          margin-right: 2rem;
-          padding-top: 100px;
-          padding-bottom: 50px;
-          position: relative;
-        }
         .people {
           display: flex;
         }
@@ -301,59 +294,6 @@ export default function LandingpageHeader() {
         }
         .people img {
           display: inline;
-        }
-        .footerContent div {
-          width: 100%;
-        }
-        .footerContent div h1, .logo, .copyright a{
-          transition: 0.2s !important;
-        }
-        .footerContent div h1:hover, .logo:hover, .copyright a:hover{
-          opacity: 0.7 !important;
-        }
-        .footerContent .card-title {
-          margin-top: 40px;
-        }
-        .footerContent .card-text {
-          margin-top: 5px;
-        }
-
-        .footerContent .green {
-          color: #3eac5b;
-        }
-        .footerContent .yellow {
-          color: #ffe50f;
-        }
-        .footerContent .blue {
-          color: #05d6ff;
-        }
-        .footerContent .red {
-          color: #ff694b;
-        }
-        .footerContent .logo {
-          width: 30%;
-          position: absolute;
-          right: 0;
-          bottom: 50px;
-        }
-        .footerContent .copyright {
-          margin-top: 20px;
-          margin-bottom: 100px;
-        }
-        @media (max-width: 640px) {
-          .footerContent {
-            padding-bottom: 50px;
-          }
-          .footerContent .logo {
-            width: 100%;
-            margin-top: 150px;
-            position: relative;
-            bottom: 0;
-          }
-          .footerContent .copyright {
-            margin-top: 20px;
-            width: 100%;
-          }
         }
       `}</style>
     </div>
