@@ -101,7 +101,6 @@ export default function LandingpageHeader() {
         .card-title {
           font-size: 1.7rem;
           line-height: 1.9rem !important;
-          color: #1d1d1d;
         }
         .landing-container {
           position: relative;
