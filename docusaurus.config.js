@@ -57,6 +57,16 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      metadata: [
+        { property: 'og:description', content: 'An open source tool to quantify the world' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'OpenDataCam' },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@OpenDataCam' },
+        { name: 'twitter:title', content: 'OpenDataCam' },
+        { name: 'twitter:description', content: 'An open source tool to quantify the world' },
+        { name: 'twitter:image', content: 'img/seo.jpg' },
+      ],
       image: 'img/seo.jpg',
       navbar: {
         title: 'OpenDataCam',
