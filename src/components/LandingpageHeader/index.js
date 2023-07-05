@@ -53,9 +53,6 @@ export default function LandingpageHeader() {
         .mt-6{
           margin-top: 0.5rem !important;
         }
-        .container {
-          max-width: 1050px;
-        }
         .text-yellow-400 {
           color: #ffe50f;
         }
@@ -285,12 +282,6 @@ export default function LandingpageHeader() {
           .yellowArrow{
             width: 80px;
           }
-        }
-
-        .footer {
-          background-color: #1d1d1d;
-          width: 100%;
-          color: white !important;
         }
 
         .footerContent {

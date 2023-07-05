@@ -6,7 +6,7 @@ import styles from './index.module.css';
 
 export default function LandingpageTeam() {
     return <>
-        <div className="container mx-auto md:mt-32" id="testimonials">
+        <div className="container mx-auto md:mt-32" id="team" style={{maxWidth: "1050px"}}>
             <h2 className="section-title">Team</h2>
             <div className="section-content text-center">
                 <div className="container">
