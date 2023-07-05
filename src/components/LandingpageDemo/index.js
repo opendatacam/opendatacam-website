@@ -20,7 +20,7 @@ export default class LandingpageDemo extends Component {
         this.player.play();
     };
 
-    render() {return <div className="container mx-auto" id="appdemo">
+    render() {return <div className="container mx-auto" id="appdemo" style={{maxWidth: "1050px"}}>
     <h2 className="section-title">App demo</h2>
     <div className="p-4 m-4 border border-gray-400 border-solid rounded-lg sm:p-8 sm:pl-12 sm:pr-12">
       <div className="video-responsive">

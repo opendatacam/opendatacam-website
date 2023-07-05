@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LandingpageTestemonials() {
     return <>
-        <div className="container mx-auto md:mt-32" id="testimonials">
+        <div className="container mx-auto md:mt-32" id="testimonials" style={{maxWidth: "1050px"}}>
             <h2 className="section-title">OpenDataCam in the Wild</h2>
             <div className="section-content">
                 <div className="section-content-text">

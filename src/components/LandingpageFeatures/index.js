@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LandingpageFeatures() {
   return (
-    <div className="container relative mx-auto md:mt-32" id="features">
+    <div className="container relative mx-auto md:mt-32" id="features" style={{maxWidth: "1050px"}}>
       <img className="hidden blue-arrows background-icon md:block" src="static/background-icons/camera_1.gif" />
       <h2 className="section-title">Features</h2>
       <div className="section-content section-content--reverse">
