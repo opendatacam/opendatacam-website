@@ -153,6 +153,9 @@ const config = {
         };
       },
     ],
+    scripts: [
+      {src: 'https://plausible.vsaw.net/js/script.js', defer: true, 'data-domain': 'opendata.cam'},
+    ],
 };
 
 module.exports = config;
