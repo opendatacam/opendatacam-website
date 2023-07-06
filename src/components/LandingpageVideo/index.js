@@ -29,7 +29,12 @@ export default class LandingpageVideo extends Component {
             allowFullScreen
             id="landingpagevideo"
         />
-        <PlayButton title="Play Video" onClick={this.onClickPlay} id="playbutton" />
+        <PlayButton
+            title="Play Video" 
+            onClick={this.onClickPlay} 
+            id="playbutton" 
+            className='plausible-event-name=Video+Play:+Landing+Page'
+        />
         <style jsx="true">{`
             .video-responsive svg {
                 position: absolute;

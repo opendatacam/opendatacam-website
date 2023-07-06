@@ -119,7 +119,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Legal',
             items: [
               {
                 label: 'Imprint',
@@ -154,7 +154,11 @@ const config = {
       },
     ],
     scripts: [
-      {src: 'https://plausible.vsaw.net/js/script.js', defer: true, 'data-domain': 'opendata.cam'},
+      {
+        src: 'https://plausible.vsaw.net/js/script.tagged-events.outbound-links.js', 
+        defer: true, 
+        'data-domain': 'opendata.cam'
+      },
     ],
 };
 

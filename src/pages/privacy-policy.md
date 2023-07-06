@@ -6,13 +6,9 @@ Our website address is: https://opendata.cam.
 
 ## What data do we collect?
 
-OpenDataCam itself does not collect any data.
+The OpenDataCam website uses the open source software Plausible Analytics, self-hosted on our own server, to count website visits, video plays, etc. No cookies are used and no personal data—not even an IP address or browser user agent—is stored. For more information how Plausible works, take a look at [Plausible: GDPR, CCPA and cookie law compliant site analytics](https://plausible.io/data-policy).
 
 However, the site is hosted on [GitHub](https://github.com/opendatacam/opendatacam-website). When you visit this site, your "IP address is logged and stored for security purposes" by GitHub. Read more about their [data collection](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection)
-
-## What about Cookies?
-
-We don't use cookies.
 
 ## Embedded content from other websites
 
@@ -22,4 +18,4 @@ These websites may collect data about you, use cookies, embed additional third-p
 
 ## Who we share your data with
 
-[GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection). That's it.
+No one.
