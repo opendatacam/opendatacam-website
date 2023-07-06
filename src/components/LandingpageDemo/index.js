@@ -33,7 +33,12 @@ export default class LandingpageDemo extends Component {
           allowFullScreen
           id='demovideo'
         />
-        <PlayButton title="Play Video" onClick={this.onClickPlay} id="demoplaybutton" />
+        <PlayButton
+            title="Play Video"
+            onClick={this.onClickPlay}
+            id="demoplaybutton"
+            className='plausible-event-name=Video+Play:+Demo'
+        />
       </div>
     </div>
     <style jsx="true">{`
