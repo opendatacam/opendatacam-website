@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LandingpageTestemonials() {
     return <>
-        <div className="container mx-auto md:mt-32" id="testimonials" style={{maxWidth: "1050px"}}>
+        <div className="container mx-auto md:mt-32" id="testimonials" style={{ maxWidth: "1050px" }}>
             <h2 className="section-title">OpenDataCam in the Wild</h2>
             <div className="section-content">
                 <div className="section-content-text">
@@ -40,12 +40,40 @@ export default function LandingpageTestemonials() {
                         </div>
                     </div>
                     <div className="w-full px-8 md:w-1/2">
-                    <div className="card">
-                        <div className="card__image">
-                            <img
-                                src={require('@site/static/img/testimontia-dashboard-nrw.png').default}
-                                alt="Image alt text"
-                                title="Logo Title Text 1" />
+                        <div className="card">
+                            <div className="card__image">
+                                <img
+                                    src={require('@site/static/img/testimonial-privacy-paper.jpeg').default}
+                                    alt="Image alt text"
+                                    title="Logo Title Text 1" />
+                            </div>
+                            <div className="card__header">
+                                <h3>Privacy-centred data-driven innovation in the smart city. Exemplary use case of traffic counting</h3>
+                            </div>
+                            <div className="card__body">
+                                <p>
+                                    This paper, shows the use case of traffic counting as an example to
+                                    illustrate how the use of advanced technologies and integrated
+                                    planning strategies can shift the balance between administrative and
+                                    business interests on the one hand, and privacy concerns on the
+                                    other, towards a privacy-centric approach. They demonstrate a
+                                    privacy-centric participatory development process that led to a
+                                    prototypical technical solution using OpenDataCam for
+                                    privacy-friendly and human-centric traffic counting.
+                                </p>
+                            </div>
+                            <div className="card__footer">
+                                <a href="https://www.tandfonline.com/doi/full/10.1080/21650020.2021.1950044" target="_blank" className="button button--secondary button--block">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full px-8 md:w-1/2">
+                        <div className="card">
+                            <div className="card__image">
+                                <img
+                                    src={require('@site/static/img/testimontia-dashboard-nrw.png').default}
+                                    alt="Image alt text"
+                                    title="Logo Title Text 1" />
                             </div>
                             <div className="card__header">
                                 <h3>Logistics NRW Dashboard</h3>
@@ -58,6 +86,34 @@ export default function LandingpageTestemonials() {
                             </div>
                             <div className="card__footer">
                                 <a href="https://logisticsdashboard.traffgoroad.com" target="_blank" className="button button--secondary button--block">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full px-8 md:w-1/2">
+                        <div className="card">
+                            <div className="card__image">
+                                <img
+                                    src={require('@site/static/img/testimontia-demonstrator-mittelstand.png').default}
+                                    alt="Image alt text"
+                                    title="Logo Title Text 1" />
+                            </div>
+                            <div className="card__header">
+                                <h3>Umsetzungsprojekt mit Stadt Hennef: Verkehrserfassung</h3>
+                            </div>
+                            <div className="card__body">
+                                <p>
+                                    In der praktischen Anwendung können so zum Beispiel
+                                    vorbeilaufende Personen (bspw. im Einzelhandel) erfasst oder
+                                    Fahrzeuge (bspw. zur Steuerung logistischer Prozesse) in einem
+                                    bestimmten Bereich gezählt werden. Diese Daten könnten dann
+                                    wiederum genutzt werden, um Prozesse anzustoßen, wie etwa die 
+                                    Anpassung von Reinigungsintervallen an tatsächliche
+                                    Besucherzahlen oder der Versand automatischer Benachrichtigungen
+                                    bei Ankunft oder Abfahrt eines Lieferfahrzeuges.
+                                </p>
+                            </div>
+                            <div className="card__footer">
+                                <a href="https://demonstratoren.gfe-net.de/demonstratoren/opendatacam-objekterkennung-zaehlung-und-workflow" target="_blank" className="button button--secondary button--block">Read more</a>
                             </div>
                         </div>
                     </div>
