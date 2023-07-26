@@ -33,6 +33,9 @@ html {
 
 .section-content {
   @apply flex flex-wrap mt-6 mb-6;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 80px;
 }
 
 @screen md {
@@ -53,6 +56,8 @@ html {
 
 .section-content-title {
   @apply text-lg font-medium;
+  font-size: 1.7rem;
+  line-height: 1.9rem !important;
 }
 
 .section-content-text {

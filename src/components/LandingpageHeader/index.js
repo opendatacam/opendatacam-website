@@ -57,12 +57,6 @@ export default function LandingpageHeader() {
           color: #ffe50f;
         }
 
-
-        .section-content {
-          padding-left: 1rem;
-          padding-right: 1rem;
-          margin-top: 80px;
-        }
         .px-6, .px-8 {
           padding-left: 1rem !important;
           padding-right: 1rem !important;

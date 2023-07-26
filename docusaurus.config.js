@@ -83,6 +83,11 @@ const config = {
             label: 'Tutorial',
           },*/
           {
+            href: '/features',
+            label: 'Features',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/opendatacam/opendatacam',
             label: 'GitHub',
             position: 'right',
@@ -95,10 +100,14 @@ const config = {
           {
             title: 'OpenDataCam',
             items: [
-              /*{
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },*/
+              {
+                label: 'Home',
+                to: '/',
+              },
+              {
+                label: 'Features',
+                to: '/features',
+              },
             ],
           },
           {
