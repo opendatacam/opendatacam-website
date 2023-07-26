@@ -14,7 +14,7 @@ export default function LandingpageFeatures() {
               <li>Fine grained counter logic</li>
               <li>Trajectory analysis</li>
               <li>Real-time or pre-recorded video sources</li>
-              <li>Run on small devices in the fied or data centers in the cloud</li>
+              <li>Run on small devices in the field or data centers in the cloud</li>
               <li>You own the data</li>
               <li>Easy to use API</li>
             </ul>
