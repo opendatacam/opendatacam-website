@@ -3,16 +3,21 @@ import React from 'react';
 export default function LandingpageFeatures() {
   return (
     <div className="container relative mx-auto md:mt-32" id="features" style={{maxWidth: "1050px"}}>
-      <img className="hidden blue-arrows background-icon md:block" src="static/background-icons/camera_1.gif" />
       <h2 className="section-title">Features</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
-          <div className="section-content-title">You own the data!</div>
+          <div className="section-content-title">Highlights</div>
           <div className="section-content-text">
-            OpenDataCam is not connected to the cloud, you’re in full control of when to gather it. Via the interface
-            you can specify which areas of the picture objects should be counted. Also the camera tracks how things move
-            through the frames. Via an easy export function you can access the tally and traces and use it in any
-            thinkable way. Going all-in? Use the <a href="https://github.com/opendatacam/opendatacam/tree/master/apidoc" target="_blank">API</a> to get access to the raw data points.
+            <p>OpenDataCam comes <a href='/features'>feature packed</a>, the highlight are</p>
+            <ul>
+              <li>Multiple object classes</li>
+              <li>Fine grained counter logic</li>
+              <li>Trajectory analysis</li>
+              <li>Real-time or pre-recorded video sources</li>
+              <li>Run on small devices in the fied or data centers in the cloud</li>
+              <li>You own the data</li>
+              <li>Easy to use API</li>
+            </ul>
           </div>
         </div>
         <div className="section-content-box">
