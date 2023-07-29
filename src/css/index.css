@@ -112,10 +112,3 @@ html {
     display: none;
   }
 }
-
-.mr-6, #__next > div.jsx-872399159.landing-container > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > a{
-  transition: 0.2s !important;
-}
-.mr-6:hover, #__next > div.jsx-872399159.landing-container > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > a:hover{
-  opacity: 0.75 !important;
-}

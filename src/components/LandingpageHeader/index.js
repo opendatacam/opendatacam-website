@@ -8,7 +8,7 @@ export default function LandingpageHeader() {
   return (
     <div className="landing-container">
       <div className="flex items-center justify-center flex-1 hero">
-        <div className={`text-center max-w-xl pl-8 pr-8 mb-16`}>
+        <div className={`text-center leading-9 lg:leading-8 sm:leading-6 max-w-xl pl-8 pr-8 mb-16`}>
           <h1 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium relative z-10`}>
             An open source tool to quantify the world
           </h1>
@@ -48,9 +48,6 @@ export default function LandingpageHeader() {
             margin-top: 150px;
             margin-bottom: 100px;
           }
-        }
-        a {
-          transition: 0.1s !important;
         }
 
         .section-content-title {
@@ -95,26 +92,17 @@ export default function LandingpageHeader() {
           text-align: left;
           line-height: 24px;
         }
-        .text-center {
-          line-height: 35px;
-        }
 
         @media (max-width: 1023px) {
           .landing-container h1 {
             line-height: 2.6rem;
             font-size: 2.5rem;
           }
-          .text-center {
-            line-height: 30px;
-          }
         }
         @media (max-width: 640px) {
           .landing-container h1 {
             line-height: 2.7rem;
             font-size: 2.5rem;
-          }
-          .text-center {
-            line-height: 25px;
           }
         }
 
