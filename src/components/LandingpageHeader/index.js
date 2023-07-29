@@ -9,7 +9,7 @@ export default function LandingpageHeader() {
     <div className="landing-container">
       <div className="flex items-center justify-center flex-1 hero">
         <div className={`text-center leading-9 lg:leading-8 sm:leading-6 max-w-xl pl-8 pr-8 mb-16`}>
-          <h1 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium relative z-10`}>
+          <h1 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium relative z-10 ${styles.heroHeader}`}>
             An open source tool to quantify the world
           </h1>
           <a
@@ -60,14 +60,6 @@ export default function LandingpageHeader() {
           max-height: 900px;
           display: flex;
           flex-direction: column;
-        }
-        .landing-container h1 {
-          line-height: 55px;
-          font-weight: regular;
-          color: #1d1d1d;
-        }
-        [data-theme='dark'] .landing-container h1 {
-          color: unset;
         }
 
         .section-title {

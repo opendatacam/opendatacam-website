@@ -59,3 +59,27 @@
     bottom: 3%;
   }
 }
+
+.heroHeader {
+  line-height: 55px;
+  font-weight: regular;
+  color: #1d1d1d;
+}
+
+[data-theme='dark'] .heroHeader {
+  color: unset;
+}
+
+@media (max-width: 1023px) {
+  .heroHeader {
+    line-height: 2.6rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroHeader {
+    line-height: 2.7rem;
+    font-size: 2.5rem;
+  }
+}
