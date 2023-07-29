@@ -22,7 +22,9 @@ export default class LandingpageDemo extends Component {
 
     render() {return <div className="container mx-auto" id="appdemo" style={{maxWidth: "1050px"}}>
     <h2 className="section-title">App demo</h2>
-    <div className="p-4 m-4 border border-gray-400 border-solid rounded-lg sm:p-8 sm:pl-12 sm:pr-12">
+    <div className="p-4 m-4 border border-gray-400 border-0 rounded-lg sm:p-8 sm:pl-12 sm:pr-12"
+        style={{backgroundColor: "#1d1d1d"}}
+    >
       <div className="video-responsive">
         <iframe
           src="https://player.vimeo.com/video/346340651"
