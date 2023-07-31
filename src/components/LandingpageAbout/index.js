@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LandingpageAbout() {
     return <>
-    <div className="container relative mx-auto" id="about" style={{maxWidth: "1050px"}}>
+    <div className="container relative mx-auto mt-32" id="about" style={{maxWidth: "1050px"}}>
       <h2 className="section-title">About OpenDataCam</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">

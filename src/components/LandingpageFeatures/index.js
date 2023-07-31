@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LandingpageFeatures() {
   return (
-    <div className="container relative mx-auto md:mt-32" id="features" style={{maxWidth: "1050px"}}>
+    <div className="container relative mx-auto mt-32" id="features" style={{maxWidth: "1050px"}}>
       <h2 className="section-title">Features</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
