@@ -1,0 +1,8 @@
+.videoFrame {
+    border: 0px;
+    background-color: #1d1d1d;
+}
+
+[data-theme='dark'] .videoFrame {
+    border: 1px solid;
+}
