@@ -14,9 +14,9 @@ export default function LandingpageTestemonials() {
                     to…Profiling in spaces like shops, train, stations, drones...
                 </div>
             </div>
-            <div className="px-2 mt-12">
-                <div className="flex flex-wrap -mx-2">
-                    <div className="w-full px-8 md:w-1/2">
+            <div className="section-content -mt-4">
+                <div className="flex flex-wrap">
+                    <div className="w-full md:w-1/2 pr-4">
                         <div className="card">
                             <div className="card__image">
                                 <img
@@ -39,7 +39,7 @@ export default function LandingpageTestemonials() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full px-8 md:w-1/2">
+                    <div className="w-full md:w-1/2 pl-4">
                         <div className="card">
                             <div className="card__image">
                                 <img
@@ -67,7 +67,7 @@ export default function LandingpageTestemonials() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full px-8 md:w-1/2">
+                    <div className="w-full md:w-1/2 pr-4">
                         <div className="card">
                             <div className="card__image">
                                 <img
@@ -89,7 +89,7 @@ export default function LandingpageTestemonials() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full px-8 md:w-1/2">
+                    <div className="w-full md:w-1/2 pl-4">
                         <div className="card">
                             <div className="card__image">
                                 <img

@@ -11,6 +11,24 @@ html {
 /* Section CSS */
 .section-title {
   @apply font-medium text-3xl text-center mt-10 mb-10;
+  font-size: 5rem !important;
+  line-height: 5rem !important;
+  width: 40rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-ransform: translateX(-50%);
+  -moz-ransform: translateX(-50%);
+  -ms-ransform: translateX(-50%);
+  -o-ransform: translateX(-50%);
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .section-title {
+    width: 90%;
+    font-size: 2.8rem !important;
+    line-height: 2.8rem !important;
+  }
 }
 
 @screen sm {
@@ -62,6 +80,8 @@ html {
 
 .section-content-text {
   @apply text-justify text-lg mt-4;
+  text-align: start;
+  line-height: 24px;
 }
 
 .section-content-img {
@@ -108,14 +128,7 @@ html {
 }
 
 @media (max-width: 800px) {
-  .odcTitle{
+  .odcTitle {
     display: none;
   }
-}
-
-.mr-6, #__next > div.jsx-872399159.landing-container > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > a{
-  transition: 0.2s !important;
-}
-.mr-6:hover, #__next > div.jsx-872399159.landing-container > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > a:hover{
-  opacity: 0.75 !important;
 }
