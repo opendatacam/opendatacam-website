@@ -80,6 +80,8 @@ html {
 
 .section-content-text {
   @apply text-justify text-lg mt-4;
+  text-align: start;
+  line-height: 24px;
 }
 
 .section-content-img {

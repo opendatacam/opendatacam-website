@@ -61,7 +61,7 @@
 }
 
 .heroHeader {
-  line-height: 43px;
+  line-height: 55px;
   font-weight: regular;
   color: #1d1d1d;
 }
@@ -81,5 +81,19 @@
   .heroHeader {
     line-height: 2.7rem;
     font-size: 2.5rem;
+  }
+}
+
+.landingContainer {
+  position: relative;
+  min-height: 90vh;
+  max-height: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-height: 800px) and (orientation: portrait) {
+  .landingContainer {
+    min-height: 80vh;
   }
 }

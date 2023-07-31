@@ -6,7 +6,7 @@ import styles from './index.module.css';
 export default function LandingpageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <div className="landing-container">
+    <div className={ styles.landingContainer }>
       <div className="flex items-center justify-center flex-1 hero">
         <div className={`text-center leading-9 lg:leading-8 sm:leading-6 max-w-xl pl-8 pr-8 mb-16`}>
           <h1 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium relative z-10 ${styles.heroHeader}`}>
@@ -33,31 +33,6 @@ export default function LandingpageHeader() {
           src={require('@site/static/background-icons/street_1.gif').default}
         />
       </div>
-
-      <style jsx="true">{`
-        .section-content-title {
-          font-size: 1.7rem;
-          line-height: 1.9rem !important;
-        }
-        .landing-container {
-          position: relative;
-          min-height: 90vh;
-          max-height: 900px;
-          display: flex;
-          flex-direction: column;
-        }
-
-        .section-content-text {
-          text-align: left;
-          line-height: 24px;
-        }
-
-        @media (max-height: 800px) and (orientation: portrait) {
-          .landing-container {
-            min-height: 80vh;
-          }
-        }
-      `}</style>
     </div>
   );
 }
