@@ -11,6 +11,24 @@ html {
 /* Section CSS */
 .section-title {
   @apply font-medium text-3xl text-center mt-10 mb-10;
+  font-size: 5rem !important;
+  line-height: 5rem !important;
+  width: 40rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-ransform: translateX(-50%);
+  -moz-ransform: translateX(-50%);
+  -ms-ransform: translateX(-50%);
+  -o-ransform: translateX(-50%);
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .section-title {
+    width: 90%;
+    font-size: 2.8rem !important;
+    line-height: 2.8rem !important;
+  }
 }
 
 @screen sm {
@@ -108,7 +126,7 @@ html {
 }
 
 @media (max-width: 800px) {
-  .odcTitle{
+  .odcTitle {
     display: none;
   }
 }

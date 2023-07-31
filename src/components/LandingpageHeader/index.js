@@ -35,21 +35,6 @@ export default function LandingpageHeader() {
       </div>
 
       <style jsx="true">{`
-        h2 {
-          font-size: 5rem !important;
-          line-height: 5rem !important;
-          margin-top: 150px;
-          margin-bottom: 70px;
-        }
-        @media (max-width: 640px) {
-          h2 {
-            font-size: 4rem !important;
-            line-height: 4rem !important;
-            margin-top: 150px;
-            margin-bottom: 100px;
-          }
-        }
-
         .section-content-title {
           font-size: 1.7rem;
           line-height: 1.9rem !important;
@@ -62,40 +47,9 @@ export default function LandingpageHeader() {
           flex-direction: column;
         }
 
-        .section-title {
-          width: 40rem;
-          left: 50%;
-          transform: translateX(-50%);
-          -webkit-ransform: translateX(-50%);
-          -moz-ransform: translateX(-50%);
-          -ms-ransform: translateX(-50%);
-          -o-ransform: translateX(-50%);
-          position: relative;
-        }
-        @media (max-width: 640px) {
-          .section-title {
-            width: 90%;
-            font-size: 2.8rem !important;
-            line-height: 2.8rem !important;
-          }
-        }
-
         .section-content-text {
           text-align: left;
           line-height: 24px;
-        }
-
-        @media (max-width: 1023px) {
-          .landing-container h1 {
-            line-height: 2.6rem;
-            font-size: 2.5rem;
-          }
-        }
-        @media (max-width: 640px) {
-          .landing-container h1 {
-            line-height: 2.7rem;
-            font-size: 2.5rem;
-          }
         }
 
         @media (max-height: 800px) and (orientation: portrait) {
