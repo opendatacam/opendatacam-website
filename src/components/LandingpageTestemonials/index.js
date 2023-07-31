@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LandingpageTestemonials() {
     return <>
-        <div className="container mx-auto md:mt-32" id="testimonials" style={{ maxWidth: "1050px" }}>
+        <div className="container mx-auto mt-32" id="testimonials" style={{ maxWidth: "1050px" }}>
             <h2 className="section-title">OpenDataCam in the Wild</h2>
             <div className="section-content">
                 <div className="section-content-text">
@@ -16,7 +16,7 @@ export default function LandingpageTestemonials() {
             </div>
             <div className="section-content -mt-4">
                 <div className="flex flex-wrap">
-                    <div className="w-full md:w-1/2 pr-4">
+                    <div className="w-full md:w-1/2 md:pr-4">
                         <div className="card">
                             <div className="card__image">
                                 <img
@@ -39,7 +39,7 @@ export default function LandingpageTestemonials() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 pl-4">
+                    <div className="w-full md:w-1/2 md:pl-4">
                         <div className="card">
                             <div className="card__image">
                                 <img
@@ -67,7 +67,7 @@ export default function LandingpageTestemonials() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 pr-4">
+                    <div className="w-full md:w-1/2 md:pr-4">
                         <div className="card">
                             <div className="card__image">
                                 <img
@@ -89,7 +89,7 @@ export default function LandingpageTestemonials() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 pl-4">
+                    <div className="w-full md:w-1/2 md:pl-4">
                         <div className="card">
                             <div className="card__image">
                                 <img
