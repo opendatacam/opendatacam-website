@@ -12,6 +12,7 @@ import LandingpageDemo from '../components/LandingpageDemo';
 import LandingpageEthics from '../components/LandingpageEthics';
 import LandingpageTestemonials from '../components/LandingpageTestemonials';
 import LandingpageTeam from '../components/LandingpageTeam';
+import LandingpageCallToAction from '../components/LandingPageCallToAction';
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -27,7 +28,8 @@ export default function Home() {
         <LandingpageFeatures />
         <LandingpageEthics />
         <LandingpageTestemonials />
-        <LandingpageTeam />  
+        { /* <LandingpageTeam /> */ }
+        <LandingpageCallToAction />
       </main>
     </Layout>
   );

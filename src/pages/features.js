@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
+import LandingpageCallToAction from '../components/LandingPageCallToAction';
+
 export default function Features() {
     const { siteConfig } = useDocusaurusContext();
     return <Layout
@@ -139,6 +141,8 @@ export default function Features() {
                     </div>
                 </div>
             </div>
+
+            <LandingpageCallToAction />
         </main>
     </Layout>;
 };
