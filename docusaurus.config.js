@@ -156,7 +156,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2017 - ${new Date().getFullYear()} OpenDataCam`,
+        copyright: `OpenDataCam Website © 2017 - ${new Date().getFullYear()} is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0<a>`,
       },
       prism: {
         theme: lightCodeTheme,
