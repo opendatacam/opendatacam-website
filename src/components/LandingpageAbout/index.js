@@ -63,11 +63,11 @@ export default function LandingpageAbout() {
           <div className="section-content-title">How do I get started?</div>
           <div className="section-content-text">
             <p>
-              The simplest way to get started with OpenDataCam is downloading our <a href="https://hub.docker.com/r/opendatacam/opendatacam">Docker images</a> and run it your computer, server or Jetson device.
+              The simplest way to get started with OpenDataCam is downloading our <a href="https://hub.docker.com/r/opendatacam/opendatacam" target='_blank'>Docker images</a> and run it your computer, server or Jetson device.
               As long as it has a NVIDIA GPU, it can run OpenDataCam.
             </p>
             <p>
-              More information on how to run OpenDataCam on your device or machine can be found in our <a href="https://github.com/opendatacam/opendatacam">GitHub repository</a>.
+              More information on how to run OpenDataCam on your device or machine can be found in our <a href="https://github.com/opendatacam/opendatacam" target='_blank'>GitHub repository</a>.
               </p>
           </div>
         </div>

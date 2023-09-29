@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import LandingpageTestemonials from '../components/LandingpageTestemonials';
+import LandingpageCallToAction from '../components/LandingPageCallToAction';
 
 export default function UseCases() {
     const { siteConfig } = useDocusaurusContext();
@@ -120,6 +121,7 @@ export default function UseCases() {
             </div>
 
             <LandingpageTestemonials />
+            <LandingpageCallToAction />
         </main>
     </Layout>;
 };
