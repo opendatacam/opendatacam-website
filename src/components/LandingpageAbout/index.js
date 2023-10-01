@@ -37,7 +37,7 @@ export default function LandingpageAbout() {
           </div>
         </div>
         <div className="section-content-box">
-          <img className="section-content-img" src={require('@site/static/img/about-3.jpg').default} alt="RJ45 Cables" />
+          <img className="section-content-img" src={require('@site/static/img/about-3.jpg').default} alt="What can you use it for?" />
         </div>
       </div>
       <div className="section-content section-content--reverse">
@@ -49,13 +49,13 @@ export default function LandingpageAbout() {
               It then follows the objects as they move accross the scene.
             </p>
             <p>
-              Users easily define counters via their browser, and every time an object crosses the
+              Define counters via the easy to use UI or API, and every time an object crosses the
               counter, OpenDataCam takes count.
             </p>
           </div>
         </div>
         <div className="section-content-box">
-          <img className="section-content-img" src={require('@site/static/img/about-2.jpg').default} alt="YOLO neural network" />
+          <img className="section-content-img" src={require('@site/static/img/own-the-data.jpg').default} alt="How does it work?" />
         </div>
       </div>
       <div className="section-content">
@@ -72,7 +72,7 @@ export default function LandingpageAbout() {
           </div>
         </div>
         <div className="section-content-box">
-          <img className="section-content-img" src={require('@site/static/img/about-4.jpg').default} alt="RJ45 Cables" />
+          <img className="section-content-img" src={require('@site/static/img/about-2.jpg').default} alt="How do I get started?" />
         </div>
       </div>
     </div>

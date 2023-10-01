@@ -6,12 +6,11 @@ export default function LandingpageTestemonials() {
             <h2 className="section-title">OpenDataCam in the Wild</h2>
             <div className="section-content">
                 <div className="section-content-text">
-                    After publishing the alpha version, we asked people what they did with it. These selected cases are here to
-                    show you what you can do with OpenDataCam.
+                    Here are selected cases are here to show you what you can do with OpenDataCam. Apart from that we also think OpenDataCam would be great
+                    to use in spaces like shops, train, stations, drones...
                 </div>
                 <div className="section-content-text">
-                    Let us know about how you use OpenDataCam. Apart from that we also think OpenDataCam would be great
-                    to…Profiling in spaces like shops, train, stations, drones...
+                    If you are using OpenDataCam, let us know and get added to the list!
                 </div>
             </div>
             <div className="section-content -mt-4">
