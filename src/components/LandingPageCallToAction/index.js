@@ -11,7 +11,7 @@ export default function LandingpageCallToAction() {
 
             <div className="section-content" >
                 <div className="section-content-box">
-                    <div className="section-content-title text-center">Start counting today with OpenDataCam!</div>
+                    <div className="section-content-title text-center md:px-8">Start counting with OpenDataCam today!</div>
                     <div className="section-content-text text-center">
                         <p>
                             <a
@@ -22,12 +22,12 @@ export default function LandingpageCallToAction() {
                                 Installation guide
                             </a>
                         </p>
-                        <p>
-                            Or reach out to us for more information!
-                        </p>
                     </div>
                 </div>
                 <div className="section-content-box">
+                    <p>
+                        Or reach out to us for more information!
+                    </p>
                     <div className="avatar">
                         <img
                             className="avatar__photo avatar__photo--xl"
