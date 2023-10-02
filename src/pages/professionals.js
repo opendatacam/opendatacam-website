@@ -40,7 +40,7 @@ export default function Features() {
                             </div>
                             <div class="card__footer">
                                 <a href="mailto:info@opendata.cam?subject=OpenDataCam for Domain Experts"
-                                   className='hover:no-underline'>
+                                   className='hover:no-underline plausible-event-name=Button+Click:+Domain+Experts'>
                                     <button class="button button--secondary button--block">Get in touch!</button>
                                 </a>
                             </div>
@@ -67,7 +67,7 @@ export default function Features() {
                             </div>
                             <div class="card__footer">
                                 <a href="mailto:info@opendata.cam?subject=OpenDataCam for Developers"
-                                   className='hover:no-underline'>
+                                   className='hover:no-underline plausible-event-name=Button+Click:+Developers'>
                                     <button class="button button--secondary button--block">Get in touch!</button>
                                 </a>
                             </div>
