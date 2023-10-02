@@ -99,6 +99,11 @@ const config = {
             position: 'left',
           },
           {
+            href: '/professionals',
+            label: 'For Professionals',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/opendatacam/opendatacam',
             label: 'GitHub',
             position: 'right',
@@ -122,6 +127,10 @@ const config = {
               {
                 label: 'Use Cases',
                 to: '/use-cases',
+              },
+              {
+                label: 'For Professionals',
+                to: '/professionals',
               },
             ],
           },

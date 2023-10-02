@@ -70,6 +70,18 @@ export default function LandingpageCallToAction() {
                                         }}
                                     />
                                 </a>
+                                <a href="mailto:info@opendata.cam" target="_blank" style={{ margin: '0.5em' }}>
+                                    <ThemedImage
+                                        className={styles.email}
+                                        alt="EMail Icon"
+                                        width={20}
+                                        height={20}
+                                        sources={{
+                                            light: useBaseUrl('icons/email.svg'),
+                                            dark: useBaseUrl('icons/email.svg'),
+                                        }}
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>

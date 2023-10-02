@@ -2,6 +2,10 @@
     filter: invert(1);
 }
 
+[data-theme='dark'] .email {
+    filter: invert(1);
+}
+
 .btn {
     @apply font-medium text-lg py-2 px-4 rounded-full;
     width: 260px;
