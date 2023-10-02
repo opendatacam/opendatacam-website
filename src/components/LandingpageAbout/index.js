@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function LandingpageAbout() {
-    return <>
-    <div className="container relative mx-auto mt-32" id="about" style={{maxWidth: "1050px"}}>
+  return <>
+    <div className="container relative mx-auto mt-32" id="about" style={{ maxWidth: "1050px" }}>
       <h2 className="section-title">About OpenDataCam</h2>
       <div className="section-content section-content--reverse">
         <div className="section-content-box">
@@ -14,8 +14,8 @@ export default function LandingpageAbout() {
           </div>
         </div>
         <div className="section-content-box">
-          <img 
-            className="section-content-img" 
+          <img
+            className="section-content-img"
             src={require('@site/static/img/about-1.jpg').default}
             alt="Camera"
           />
@@ -26,7 +26,7 @@ export default function LandingpageAbout() {
           <div className="section-content-title">What can you use it for?</div>
           <div className="section-content-text">
             <p>
-              People use OpenDataCam for many different <a href="use-cases">use cases</a>. It is 
+              People use OpenDataCam for many different <a href="use-cases">use cases</a>. It is
               especially popular for traffic studies (modal-split, turn-count, etc.) but OpenDataCam
               detects 50+ common objects out of the box and can be used for many more things.
             </p>
@@ -63,12 +63,14 @@ export default function LandingpageAbout() {
           <div className="section-content-title">How do I get started?</div>
           <div className="section-content-text">
             <p>
-              The simplest way to get started with OpenDataCam is downloading our <a href="https://hub.docker.com/r/opendatacam/opendatacam" target='_blank'>Docker images</a> and run it your computer, server or Jetson device.
-              As long as it has a NVIDIA GPU, it can run OpenDataCam.
+              The simplest way to get started with OpenDataCam is downloading our <a href="https://hub.docker.com/r/opendatacam/opendatacam" target='_blank'>Docker images</a> and 
+              run it your computer, server or Jetson device. More information on how to run
+              OpenDataCam on your device or machine can be found in our <a href="https://github.com/opendatacam/opendatacam" target='_blank'>GitHub repository</a>.
             </p>
             <p>
-              More information on how to run OpenDataCam on your device or machine can be found in our <a href="https://github.com/opendatacam/opendatacam" target='_blank'>GitHub repository</a>.
-              </p>
+              Professionals users and businesses lookin to use OpenDataCam for work, can also take a
+              look at our <a href="/professionals/">professional offers and services</a>.
+            </p>
           </div>
         </div>
         <div className="section-content-box">
@@ -76,5 +78,5 @@ export default function LandingpageAbout() {
         </div>
       </div>
     </div>
-    </>
+  </>
 }
