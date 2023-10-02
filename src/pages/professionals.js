@@ -7,7 +7,7 @@ import LandingpageCallToAction from '../components/LandingPageCallToAction';
 export default function Features() {
     const { siteConfig } = useDocusaurusContext();
     return <Layout
-        title="Features"
+        title="For Professionals"
         description={siteConfig.tagline}>
         <main>
             <div className="container relative mx-auto md:mt-32" id="features" style={{ maxWidth: "1050px" }}>
