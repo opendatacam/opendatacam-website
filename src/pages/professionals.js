@@ -33,15 +33,27 @@ export default function Features() {
                                 </p>
                                 <p>
                                     Get started with OpenDataCam quicker with "OpenDataCam as a
-                                    Service". Use OpenDataCam as a cloud service and upload your
-                                    pre-recorded video or buy/rent cameras with OpenDataCam
-                                    pre-installed.
+                                    Service"
+                                </p>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            connect existing traffic cameras to the OpenDataCam Cloud
+                                        </li>
+                                        <li>
+                                            upload and analyze existing video footage quicker by
+                                            using OpenDataCam Cloud
+                                        </li>
+                                        <li>
+                                            buy or rent hardware with OpenDataCam pre-installed
+                                        </li>
+                                    </ul>
                                 </p>
                             </div>
                             <div class="card__footer">
-                                <a href="mailto:info@opendata.cam?subject=OpenDataCam for Domain Experts"
+                                <a href="https://nextcloud.vsaw.net/apps/forms/s/nropaHRZCEztFjWm2cs7PMqz"
                                    className='hover:no-underline plausible-event-name=Button+Click:+Domain+Experts'>
-                                    <button class="button button--secondary button--block">Get in touch!</button>
+                                    <button class="button button--secondary button--block">Sign Up</button>
                                 </a>
                             </div>
                         </div>
@@ -66,7 +78,7 @@ export default function Features() {
                                 </p>
                             </div>
                             <div class="card__footer">
-                                <a href="mailto:info@opendata.cam?subject=OpenDataCam for Developers"
+                                <a href="https://nextcloud.vsaw.net/apps/forms/s/qMPBAMrENMiDNX9sNTgm9YkP"
                                    className='hover:no-underline plausible-event-name=Button+Click:+Developers'>
                                     <button class="button button--secondary button--block">Get in touch!</button>
                                 </a>
