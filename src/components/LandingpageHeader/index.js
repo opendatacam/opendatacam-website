@@ -13,11 +13,10 @@ export default function LandingpageHeader() {
             An open source tool to quantify the world
           </h1>
           <a
-            href="https://github.com/opendatacam/opendatacam"
-            target="_blank"
+            href="/docs/#quickstart"
             className={`flex inline-flex items-center justify-center mt-10 ${styles.btn}`}
           >
-            Installation guide
+            Quickstart Guide
           </a>
         </div>
         <img 
