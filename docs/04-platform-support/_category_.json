@@ -1,0 +1,7 @@
+{
+  "label": "Platforms",
+  "link": {
+    "type": "generated-index",
+    "description": "Platform specific information to run OpenDataCam on the different platforms"
+  }
+}
