@@ -15,11 +15,10 @@ export default function LandingpageCallToAction() {
                     <div className="section-content-text text-center">
                         <p>
                             <a
-                                href="https://github.com/opendatacam/opendatacam"
-                                target="_blank"
+                                href="/docs/#quickstart"
                                 className={`flex inline-flex items-center justify-center ${styles.btn}`}
                             >
-                                Installation guide
+                                Quickstart Guide
                             </a>
                         </p>
                     </div>
