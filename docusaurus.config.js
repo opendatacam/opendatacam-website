@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/opendatacam/opendatacam-website/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -53,7 +53,7 @@ const config = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
-          ignorePatterns: ['/opendatacam/', '/docs/**'],
+          ignorePatterns: ['/opendatacam/'],
           filename: 'sitemap.xml',
         },
       }),
@@ -104,6 +104,11 @@ const config = {
             position: 'left',
           },
           {
+            href: '/docs',
+            label: 'Documentation',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/opendatacam/opendatacam',
             label: 'GitHub',
             position: 'right',
@@ -132,6 +137,10 @@ const config = {
                 label: 'For Professionals',
                 to: '/professionals',
               },
+              {
+                label: 'Documentation',
+                to: '/docs',
+              },
             ],
           },
           {
@@ -144,10 +153,6 @@ const config = {
               {
                 label: 'LinkedIn',
                 href: 'https://www.linkedin.com/company/opendatacam',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/opendatacam',
               },
             ],
           },
