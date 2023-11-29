@@ -43,7 +43,7 @@ Learn more about Jetson Nano ecosystem: [https://elinux.org/Jetson_Nano#Ecosyste
 
 ### 1. Flash Jetson Nano:
 
-Follow [Flashing guide](FLASH_JETSON.md#Jetson-Nano) (don't forget to verify if CUDA is in your PATH)
+Follow [NVIDIA JetPack Documentation](https://docs.nvidia.com/jetson/jetpack/install-jetpack/index.html) to install the Jetpack on your Jetson Device (don't forget to verify if CUDA is in your PATH)
 
 ### 2. Set correct Powermode according to your Power supply
 

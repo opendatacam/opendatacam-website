@@ -550,7 +550,7 @@ For example, if you change the gradient with:
 
 ### Use Environment Variables
 
-Some of the entries in `config.json` can be overwritten using environment variables. Currently this is the `PORTS` object and the setting for the `MONGODB_URL`. See the file [.env.example](../.env.example) as an example how to set them. Make sure the use the exact same names or opendatacam will fall back to `config.json`, and if that is not present the general defaults.
+Some of the entries in `config.json` can be overwritten using environment variables. Currently this is the `PORTS` object and the setting for the `MONGODB_URL`. See the file [.env.example](https://github.com/opendatacam/opendatacam/blob/development/.env.example) as an example how to set them. Make sure the use the exact same names or opendatacam will fall back to `config.json`, and if that is not present the general defaults.
 
 #### Without Docker
 

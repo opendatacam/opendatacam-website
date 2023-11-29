@@ -77,4 +77,4 @@ FPS depends on:
 
 We made the default settings to run at least at 10 FPS on any Jetson.
 
-Learn more in the [Customize OpenDataCam documentation](documentation/CONFIG.md#Change-neural-network-weights)
+Learn more in the [Configuration documentation](/docs/configuration#use-custom-neural-network-weights)
